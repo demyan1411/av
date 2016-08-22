@@ -1,0 +1,66 @@
+.main-block {
+  color: #f4f3f2;
+  max-width: 1500px;
+  margin: 0 auto;
+
+  &__slide {
+    height: 632px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    padding-top: 85px;
+    outline: 0;
+  }
+
+  .slick-dots {
+    bottom: 240px;
+  }
+
+  &__content {
+    width: 320px;
+  }
+
+  &__title {
+    font-family: $helios;
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 45px;
+    border-bottom: 3px solid #f4f3f2;
+    border-top: 3px solid #f4f3f2;
+    padding: 15px 0 7px;
+    margin-bottom: 25px;
+
+    &--span {
+      font-size: 40px;
+      // line-height: 47px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+  }
+
+  &__social {
+    font-size: 18px;
+    line-height: 22px;
+
+    &:before {
+      content: '';
+      background: url(../img/tick.png) 0 0 no-repeat;
+      width: 14px;
+      height: 14px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main-block {
+    max-width: 1024px;
+  }
+}

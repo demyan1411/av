@@ -1,0 +1,17 @@
+﻿/* --------- mixins --------- */
+
+@mixin inlineblock {
+	display: inline-block;
+	vertical-align: top;
+}
+
+@mixin cl {
+	&:before, &:after {content: " "; display: table;}
+	&:after {clear: both;}
+}
+
+@mixin hl {
+	&:hover {
+		text-decoration: underline;
+	}
+}
