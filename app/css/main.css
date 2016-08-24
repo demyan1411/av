@@ -18,12 +18,6 @@
   font-style: normal; }
 
 @font-face {
-  font-family: 'SeroOffcPro-Bold';
-  src: url("../fonts/SeroOffcPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SeroOffcPro-Bold.woff") format("woff"), url("../fonts/SeroOffcPro-Bold.ttf") format("truetype"), url("../fonts/SeroOffcPro-Bold.svg#SeroOffcPro-Bold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
   font-family: 'helioscondcbold';
   src: url("../fonts/helioscondbold-webfont.eot");
   src: url("../fonts/helioscondbold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helioscondbold-webfont.woff") format("woff"), url("../fonts/helioscondbold-webfont.ttf") format("truetype"), url("../fonts/helioscondbold-webfont.svg#helioscondcbold") format("svg");
@@ -94,6 +88,10 @@ h1 {
   width: 1000px;
   margin: 0 auto; }
 
+@media screen and (max-width: 1120px) {
+  .wrapper {
+    width: 980px; } }
+
 .header__top {
   background: #e6e7e8;
   padding: 5px 0; }
@@ -134,7 +132,7 @@ h1 {
   .header__language:last-child {
     border: 0; }
   .header__language-link {
-    font-family: "SeroOffcPro-Bold";
+    font-family: "SeroOffcPro-Medium";
     text-decoration: underline; }
     .header__language-link:hover {
       text-decoration: none; }
@@ -283,7 +281,7 @@ h1 {
 
 .main-block {
   color: #f4f3f2;
-  max-width: 1500px;
+  width: 1500px;
   margin: 0 auto; }
   .main-block__slide {
     height: 632px;
@@ -324,9 +322,9 @@ h1 {
       vertical-align: middle;
       margin-right: 10px; }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1000px) {
   .main-block {
-    max-width: 1024px; } }
+    width: 1000px; } }
 
 .main-content {
   background: #fff;
@@ -719,3 +717,12 @@ h1 {
 
 .js-interactive {
   display: none; }
+
+@media screen and (max-width: 1120px) {
+  .main-content {
+    width: 1024px;
+    padding: 25px 0 0; } }
+
+@media screen and (max-width: 1040px) {
+  .main-content {
+    width: 100%; } }

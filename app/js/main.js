@@ -18,7 +18,10 @@ $(document).ready(function() {
 		dots: true,
 		arrows: false,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+		autoplay: true,
+  	autoplaySpeed: 10000,
+		speed: 1000
 	});
 
 	$('.js-calculator-button').on('click', function(){
@@ -31,5 +34,14 @@ $(document).ready(function() {
 		$('.js-' + calcBlock).show();
 	});
 
-
+	resizeSlider();
+	$(window).on('resize', function () {
+		resizeSlider();
+	})
 }); // end ready
+
+function resizeSlider() {
+	if ($(window).width() < 1520 && $(window).width() > 980) {
+		$('.js-main-block-slider').css('width', $(window).width() + 'px');
+	}
+}

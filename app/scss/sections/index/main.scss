@@ -1,6 +1,6 @@
 .main-block {
   color: #f4f3f2;
-  max-width: 1500px;
+  width: 1500px;
   margin: 0 auto;
 
   &__slide {
@@ -59,8 +59,8 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1000px) {
   .main-block {
-    max-width: 1024px;
+    width: 1000px;
   }
 }
