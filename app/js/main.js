@@ -34,6 +34,44 @@ $(document).ready(function() {
 		$('.js-' + calcBlock).show();
 	});
 
+	$('.about-mission__slider').slick({
+		dots: true,
+		arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+		speed: 500
+	});
+
+	$('.about-mission__slider').on('afterChange', function(slick, currentSlide) {
+		$('.about-mission__block').removeClass('active');
+		$('[data-slide="' + (currentSlide.currentSlide) + '"]').addClass('active');
+	});
+
+	var time = true;
+	$('.about-mission__block').on('click', function () {
+		var slideNumber = $(this).data('slide');
+		var that = $(this);
+
+		if (time) {
+			$('.about-mission__block').removeClass('active');
+			that.addClass('active');
+			time = false;
+		}
+
+		setTimeout(function () {
+			time = true
+		}, 500);
+
+		$('.about-mission__slider').slick('slickGoTo', slideNumber);
+	});
+
+	$('.about-efficiency__slider').slick({
+		dots: false,
+		arrows: true,
+    slidesToShow: 3,
+    slidesToScroll: 1
+	});
+
 	resizeSlider();
 	$(window).on('resize', function () {
 		resizeSlider();

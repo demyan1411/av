@@ -1,0 +1,27 @@
+.about-first {
+  padding-top: 44px;
+  padding-bottom: 70px;
+  color: #e6e7e8;
+  background: url(../img/about-first-block.jpg) center top no-repeat;
+
+  &__title {
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+    width: 590px;
+    padding: 15px 0 18px;
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 20px;
+    width: 590px;
+  }
+
+  &__strong {
+    font-family: $seraMed;
+  }
+}

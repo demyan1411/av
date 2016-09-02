@@ -1,0 +1,36 @@
+.about-career {
+  @include cl;
+  padding-bottom: 70px;
+
+  &__left {
+    font-size: 16px;
+    line-height: 20px;
+    float: left;
+    width: 630px;
+  }
+
+  &__right {
+    float: right;
+    font-size: 14px;
+    line-height: 18px;
+    width: 318px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-family: $seraMed;
+
+    &--red {
+      color: #cd2c2c;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__text {
+    margin-bottom: 10px;
+  }
+}

@@ -726,3 +726,317 @@ h1 {
 @media screen and (max-width: 1040px) {
   .main-content {
     width: 100%; } }
+
+.about-first {
+  padding-top: 44px;
+  padding-bottom: 70px;
+  color: #e6e7e8;
+  background: url(../img/about-first-block.jpg) center top no-repeat; }
+  .about-first__title {
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+    width: 590px;
+    padding: 15px 0 18px;
+    margin-bottom: 35px; }
+  .about-first__text {
+    font-size: 16px;
+    line-height: 20px;
+    width: 590px; }
+  .about-first__strong {
+    font-family: "SeroOffcPro-Medium"; }
+
+.about-geography:before, .about-geography:after {
+  content: " ";
+  display: table; }
+
+.about-geography:after {
+  clear: both; }
+
+.about-geography__map {
+  width: 766px;
+  height: 432px;
+  float: left;
+  position: relative; }
+
+.about-geography__popup {
+  width: 182px;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #828282; }
+  .about-geography__popup:after {
+    content: '';
+    width: 22px;
+    height: 19px;
+    display: block;
+    background: url(../img/map-tick.png) 0 0 no-repeat;
+    position: absolute;
+    bottom: -18px;
+    left: 30px; }
+  .about-geography__popup-title {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 6px;
+    font-family: "SeroOffcPro-Medium"; }
+  .about-geography__popup-text {
+    font-size: 11px;
+    line-height: 15px; }
+
+.about-geography__red {
+  position: absolute;
+  top: 20px;
+  left: 30px; }
+  .about-geography__red-big {
+    top: 20px;
+    left: 100px; }
+
+.about-geography__img {
+  display: block; }
+
+.about-geography__right {
+  width: 220px;
+  float: right; }
+
+.about-geography__title {
+  font-size: 18px;
+  line-height: 21px;
+  color: #cd2c2c;
+  font-family: "helioscondcbold";
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 15px; }
+
+.about-geography__text {
+  font-size: 14px;
+  line-height: 17px;
+  border-top: 1px solid #cd2c2c;
+  border-bottom: 1px solid #cd2c2c;
+  padding: 10px 0;
+  margin-bottom: 15px; }
+
+.about-geography__info {
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 2px; }
+
+.about-geography__bold {
+  font-family: "SeroOffcPro-Medium"; }
+
+.about-geography__link {
+  text-decoration: underline; }
+  .about-geography__link:hover {
+    text-decoration: none; }
+
+.about-title {
+  color: #cd2c2c;
+  border-bottom: 1px solid #cd2c2c;
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-family: "SeroOffcPro-Medium";
+  margin-bottom: 18px;
+  margin-top: 20px; }
+  .about-title__link:before {
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    width: 14px;
+    height: 14px;
+    background: url(../img/red-tick.png) 0 0 no-repeat;
+    margin-right: 5px; }
+  .about-title__link:hover {
+    color: #cd2c2c;
+    text-decoration: underline; }
+
+.about-mission__slider {
+  float: right;
+  width: 666px;
+  height: 420px; }
+  .about-mission__slider .slick-dots {
+    bottom: 17px; }
+
+.about-mission__slide {
+  outline: 0;
+  height: 420px; }
+
+.about-mission__left {
+  float: left;
+  width: 330px;
+  padding-right: 12px; }
+
+.about-mission__title {
+  font-size: 27px;
+  line-height: 31px;
+  color: #616369;
+  text-transform: uppercase;
+  font-family: "helioscondcbold";
+  margin-bottom: 17px; }
+
+.about-mission__red {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "SeroOffcPro-Medium";
+  color: #cd2c2c; }
+
+.about-mission__text {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 60px; }
+
+.about-mission__top:before, .about-mission__top:after {
+  content: " ";
+  display: table; }
+
+.about-mission__top:after {
+  clear: both; }
+
+.about-mission__bottom {
+  font-size: 0; }
+
+.about-mission__block {
+  width: 333px;
+  margin-bottom: 50px;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer; }
+  .about-mission__block-left {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 14px;
+    width: 99px;
+    height: 99px;
+    background: #e6e7e8;
+    position: relative; }
+  .about-mission__block-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .about-mission__block-content {
+    display: inline-block;
+    vertical-align: top;
+    width: 210px;
+    padding-right: 10px; }
+  .about-mission__block-title {
+    font-size: 21px;
+    line-height: 24px;
+    color: #cd2c2c;
+    text-transform: uppercase;
+    margin-bottom: 3px; }
+  .about-mission__block-text {
+    font-size: 14px;
+    line-height: 17px; }
+  .about-mission__block:hover .about-mission__block-title, .about-mission__block.active .about-mission__block-title {
+    font-weight: bold; }
+  .about-mission__block:hover .about-mission__block-left, .about-mission__block.active .about-mission__block-left {
+    background: #adb0ba; }
+
+@media screen and (max-width: 1120px) {
+  .about-mission__left {
+    width: 320px; }
+  .about-mission__slider {
+    width: 650px; }
+  .about-mission__block {
+    width: 326px; } }
+
+.about-efficiency {
+  margin-top: -30px; }
+  .about-efficiency__slider {
+    margin: 6px 0 25px;
+    width: 1000px;
+    display: inline-block;
+    padding-left: 20px; }
+    .about-efficiency__slider .slick-arrow {
+      height: 140px;
+      opacity: 1;
+      z-index: 10; }
+      .about-efficiency__slider .slick-arrow:before {
+        display: none; }
+      .about-efficiency__slider .slick-arrow:hover {
+        background-color: #74767d; }
+    .about-efficiency__slider .slick-prev {
+      background: #adaeb3 url(../img/prev.png) center center no-repeat;
+      left: 0; }
+    .about-efficiency__slider .slick-next {
+      background: #adaeb3 url(../img/next.png) center center no-repeat;
+      right: 0; }
+  .about-efficiency__slide {
+    outline: 0;
+    text-align: center; }
+  .about-efficiency__block {
+    outline: 0;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    width: 315px;
+    padding: 0 12px;
+    height: 140px;
+    border-right: 1px solid #616369; }
+    .about-efficiency__block--center .about-efficiency__number {
+      font-size: 40px;
+      line-height: 37px; }
+  .about-efficiency__number {
+    font-family: "helioscondcbold";
+    font-size: 64px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #cd2c2c;
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: -3px; }
+  .about-efficiency__right {
+    display: inline-block;
+    vertical-align: top;
+    width: 190px;
+    margin-left: 10px; }
+  .about-efficiency__title {
+    font-family: "helioscondcbold";
+    font-size: 27px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+  .about-efficiency__text {
+    font-size: 14px;
+    line-height: 17px; }
+  .about-efficiency__link {
+    text-decoration: underline;
+    font-family: "SeroOffcPro-Medium"; }
+    .about-efficiency__link:hover {
+      text-decoration: none; }
+
+@media screen and (max-width: 1120px) {
+  .about-efficiency__slider {
+    width: 980px; } }
+
+.about-career {
+  padding-bottom: 70px; }
+  .about-career:before, .about-career:after {
+    content: " ";
+    display: table; }
+  .about-career:after {
+    clear: both; }
+  .about-career__left {
+    font-size: 16px;
+    line-height: 20px;
+    float: left;
+    width: 630px; }
+  .about-career__right {
+    float: right;
+    font-size: 14px;
+    line-height: 18px;
+    width: 318px; }
+  .about-career__title {
+    text-transform: uppercase;
+    font-family: "SeroOffcPro-Medium"; }
+    .about-career__title--red {
+      color: #cd2c2c;
+      text-decoration: underline; }
+      .about-career__title--red:hover {
+        text-decoration: none; }
+  .about-career__text {
+    margin-bottom: 10px; }
