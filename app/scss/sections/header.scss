@@ -1,4 +1,10 @@
 .header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid #e6e7e8;
+
   &__top {
     background: #e6e7e8;
     padding: 5px 0;
@@ -55,6 +61,7 @@
 
   &__main {
     padding-top: 16px;
+    background: #fff;
     @include cl;
   }
 

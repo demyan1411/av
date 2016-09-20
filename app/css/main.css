@@ -67,7 +67,9 @@ h1 {
   width: 100%;
   height: 100%;
   min-height: 100%;
-  display: table; }
+  display: table;
+  position: relative;
+  padding-top: 170px; }
   .main--content {
     display: table-row;
     height: 100%; }
@@ -92,131 +94,127 @@ h1 {
   .wrapper {
     width: 980px; } }
 
-.header__top {
-  background: #e6e7e8;
-  padding: 5px 0; }
-  .header__top:before, .header__top:after {
-    content: " ";
-    display: table; }
-  .header__top:after {
-    clear: both; }
-
-.header__contacts {
-  float: right;
-  font-size: 12px;
-  line-height: 15px; }
-
-.header__phone {
-  display: inline-block; }
-
-.header__mail {
-  display: inline-block;
-  margin: 0 27px;
-  font-family: "SeroOffcPro-Medium";
-  text-decoration: underline; }
-  .header__mail:hover {
-    text-decoration: underline; }
-  .header__mail:hover {
-    text-decoration: none; }
-
-.header__languages {
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 0; }
-
-.header__language {
-  display: inline-block;
-  border-right: 1px solid #616369;
-  padding: 3px 5px 0;
-  font-size: 12px; }
-  .header__language:last-child {
-    border: 0; }
-  .header__language-link {
+.header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid #e6e7e8; }
+  .header__top {
+    background: #e6e7e8;
+    padding: 5px 0; }
+    .header__top:before, .header__top:after {
+      content: " ";
+      display: table; }
+    .header__top:after {
+      clear: both; }
+  .header__contacts {
+    float: right;
+    font-size: 12px;
+    line-height: 15px; }
+  .header__phone {
+    display: inline-block; }
+  .header__mail {
+    display: inline-block;
+    margin: 0 27px;
     font-family: "SeroOffcPro-Medium";
     text-decoration: underline; }
-    .header__language-link:hover {
-      text-decoration: none; }
-
-.header__main {
-  padding-top: 16px; }
-  .header__main:before, .header__main:after {
-    content: " ";
-    display: table; }
-  .header__main:after {
-    clear: both; }
-
-.header__logo {
-  float: left; }
-
-.header__nav {
-  float: right; }
-
-.header__item {
-  padding-top: 75px;
-  display: inline-block;
-  margin-left: 22px;
-  position: relative; }
-
-.header__link {
-  font-family: "SeroOffcPro-Medium";
-  font-size: 11px;
-  line-height: 16px;
-  display: block;
-  position: relative;
-  padding-bottom: 16px; }
-  .header__link-title {
-    text-transform: uppercase;
-    display: block; }
-  .header__link-icon {
-    width: 20px;
-    height: 20px;
-    background: url("../img/header-link.png") 0 0 no-repeat;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin-bottom: 60px;
-    display: none; }
-  .header__link:hover .header__link-title {
-    color: #cd2c2c;
-    font-weight: bold; }
-  .header__link:hover .header__submenu {
-    display: block; }
-  .header__link:hover .header__link-icon {
-    display: block; }
-
-.header__submenu {
-  width: 250px;
-  display: none;
-  position: absolute;
-  background: #e6e7e8;
-  top: 100%;
-  padding: 17px 15px 15px;
-  z-index: 10; }
-  .header__submenu:before {
-    content: '';
-    display: block;
-    border: 7px solid transparent;
-    border-top: 7px solid #fff;
-    position: absolute;
-    top: 0;
-    left: 12px; }
-  .header__submenu-link {
-    display: block;
-    font-size: 14px;
-    font-family: "SeroOffcPro-Medium";
-    margin-bottom: 7px; }
-    .header__submenu-link:last-child {
-      margin-bottom: 0; }
-    .header__submenu-link:hover {
-      color: #cd2c2c;
+    .header__mail:hover {
       text-decoration: underline; }
-      .header__submenu-link:hover:before {
-        content: '';
-        border: 4px solid transparent;
-        border-left: 4px solid #fff;
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 3px; }
+    .header__mail:hover {
+      text-decoration: none; }
+  .header__languages {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0; }
+  .header__language {
+    display: inline-block;
+    border-right: 1px solid #616369;
+    padding: 3px 5px 0;
+    font-size: 12px; }
+    .header__language:last-child {
+      border: 0; }
+    .header__language-link {
+      font-family: "SeroOffcPro-Medium";
+      text-decoration: underline; }
+      .header__language-link:hover {
+        text-decoration: none; }
+  .header__main {
+    padding-top: 16px;
+    background: #fff; }
+    .header__main:before, .header__main:after {
+      content: " ";
+      display: table; }
+    .header__main:after {
+      clear: both; }
+  .header__logo {
+    float: left; }
+  .header__nav {
+    float: right; }
+  .header__item {
+    padding-top: 75px;
+    display: inline-block;
+    margin-left: 22px;
+    position: relative; }
+  .header__link {
+    font-family: "SeroOffcPro-Medium";
+    font-size: 11px;
+    line-height: 16px;
+    display: block;
+    position: relative;
+    padding-bottom: 16px; }
+    .header__link-title {
+      text-transform: uppercase;
+      display: block; }
+    .header__link-icon {
+      width: 20px;
+      height: 20px;
+      background: url("../img/header-link.png") 0 0 no-repeat;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin-bottom: 60px;
+      display: none; }
+    .header__link:hover .header__link-title {
+      color: #cd2c2c;
+      font-weight: bold; }
+    .header__link:hover .header__submenu {
+      display: block; }
+    .header__link:hover .header__link-icon {
+      display: block; }
+  .header__submenu {
+    width: 250px;
+    display: none;
+    position: absolute;
+    background: #e6e7e8;
+    top: 100%;
+    padding: 17px 15px 15px;
+    z-index: 10; }
+    .header__submenu:before {
+      content: '';
+      display: block;
+      border: 7px solid transparent;
+      border-top: 7px solid #fff;
+      position: absolute;
+      top: 0;
+      left: 12px; }
+    .header__submenu-link {
+      display: block;
+      font-size: 14px;
+      font-family: "SeroOffcPro-Medium";
+      margin-bottom: 7px; }
+      .header__submenu-link:last-child {
+        margin-bottom: 0; }
+      .header__submenu-link:hover {
+        color: #cd2c2c;
+        text-decoration: underline; }
+        .header__submenu-link:hover:before {
+          content: '';
+          border: 4px solid transparent;
+          border-left: 4px solid #fff;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 3px; }
 
 .footer {
   width: 100%;
@@ -406,7 +404,9 @@ h1 {
         vertical-align: middle;
         margin-left: 5px; }
       .main-content__info-link:hover {
-        text-decoration: none; }
+        color: #cd2c2c; }
+        .main-content__info-link:hover:after {
+          background: url(../img/press-tick-hover.png) 0 0 no-repeat; }
   .main-content__text {
     font-size: 18px;
     line-height: 22px; }
@@ -628,92 +628,94 @@ h1 {
     height: 298px; }
   .main-content .slick-dots {
     bottom: 19px; }
-  .main-content__calculator-top {
-    border-bottom: 1px solid #939393; }
-  .main-content__calculator-button {
-    display: inline-block;
-    vertical-align: top;
-    width: 190px;
-    height: 58px;
-    border: 0;
-    background: transparent;
-    padding: 8px 22px 10px 18px;
-    text-align: left;
-    margin-right: 18px;
-    color: #616369;
-    font-size: 14px;
-    line-height: 18px;
-    outline: 0; }
-    .main-content__calculator-button:last-child {
-      width: 138px;
-      margin-right: 0; }
-    .main-content__calculator-button span {
-      border-bottom: 1px dashed #616369; }
-    .main-content__calculator-button:hover span {
-      border-bottom: 1px solid transparent; }
-    .main-content__calculator-button.active {
-      color: #cd2c2c;
-      background: #f0f0f0; }
-      .main-content__calculator-button.active span {
+  .main-content__calculator {
+    height: 240px; }
+    .main-content__calculator-top {
+      border-bottom: 1px solid #939393; }
+    .main-content__calculator-button {
+      display: inline-block;
+      vertical-align: top;
+      width: 190px;
+      height: 58px;
+      border: 0;
+      background: transparent;
+      padding: 8px 22px 10px 18px;
+      text-align: left;
+      margin-right: 18px;
+      color: #616369;
+      font-size: 14px;
+      line-height: 18px;
+      outline: 0; }
+      .main-content__calculator-button:last-child {
+        width: 138px;
+        margin-right: 0; }
+      .main-content__calculator-button span {
+        border-bottom: 1px dashed #616369; }
+      .main-content__calculator-button:hover span {
         border-bottom: 1px solid transparent; }
-  .main-content__calculator-bottom {
-    padding-top: 25px; }
-  .main-content__calculator-form {
-    padding-bottom: 26px; }
-    .main-content__calculator-form--calculation {
-      display: none; }
-  .main-content__calculator-block {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 20px;
-    margin-bottom: 18px; }
-    .main-content__calculator-block--last {
-      margin-right: 0; }
-  .main-content__calculator-text {
-    font-size: 14px;
-    line-height: 18px;
-    margin-bottom: 6px; }
-  .main-content__calculator-input {
-    display: inline-block;
-    vertical-align: middle;
-    border: 1px solid #939393;
-    padding: 8px 5px;
-    margin-right: 7px; }
-  .main-content__calculator-red {
-    display: inline-block;
-    vertical-align: bottom;
-    font-size: 14px;
-    line-height: 18px;
-    color: #cd2c2c;
-    margin-right: 10px; }
-  .main-content__calculator-inputKg {
-    display: inline-block;
-    vertical-align: bottom;
-    border: 1px solid #939393;
-    text-align: right;
-    width: 70px;
-    padding: 8px 5px;
-    margin-right: 6px; }
-  .main-content__calculator-kg {
-    display: inline-block;
-    vertical-align: bottom;
-    font-size: 36px;
-    line-height: 42px;
-    color: #cd2c2c;
-    font-family: "helioscondcbold";
-    margin-right: 20px; }
-  .main-content__calculator-calculate {
-    display: inline-block;
-    vertical-align: bottom;
-    width: 185px;
-    height: 36px;
-    color: #fff;
-    font-size: 14px;
-    line-height: 34px;
-    border: 0;
-    background: #bdbdbd; }
-    .main-content__calculator-calculate:hover {
-      background: #cd2c2c; }
+      .main-content__calculator-button.active {
+        color: #cd2c2c;
+        background: #f0f0f0; }
+        .main-content__calculator-button.active span {
+          border-bottom: 1px solid transparent; }
+    .main-content__calculator-bottom {
+      padding-top: 25px; }
+    .main-content__calculator-form {
+      padding-bottom: 26px; }
+      .main-content__calculator-form--calculation {
+        display: none; }
+    .main-content__calculator-block {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 20px;
+      margin-bottom: 18px; }
+      .main-content__calculator-block--last {
+        margin-right: 0; }
+    .main-content__calculator-text {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 6px; }
+    .main-content__calculator-input {
+      display: inline-block;
+      vertical-align: middle;
+      border: 1px solid #939393;
+      padding: 8px 5px;
+      margin-right: 7px; }
+    .main-content__calculator-red {
+      display: inline-block;
+      vertical-align: bottom;
+      font-size: 14px;
+      line-height: 18px;
+      color: #cd2c2c;
+      margin-right: 10px; }
+    .main-content__calculator-inputKg {
+      display: inline-block;
+      vertical-align: bottom;
+      border: 1px solid #939393;
+      text-align: right;
+      width: 70px;
+      padding: 8px 5px;
+      margin-right: 6px; }
+    .main-content__calculator-kg {
+      display: inline-block;
+      vertical-align: bottom;
+      font-size: 36px;
+      line-height: 42px;
+      color: #cd2c2c;
+      font-family: "helioscondcbold";
+      margin-right: 20px; }
+    .main-content__calculator-calculate {
+      display: inline-block;
+      vertical-align: bottom;
+      width: 185px;
+      height: 36px;
+      color: #fff;
+      font-size: 14px;
+      line-height: 34px;
+      border: 0;
+      background: #bdbdbd; }
+      .main-content__calculator-calculate:hover {
+        background: #cd2c2c; }
 
 .js-interactive {
   display: none; }
@@ -886,7 +888,7 @@ h1 {
 .about-mission__text {
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 60px; }
+  margin-bottom: 45px; }
 
 .about-mission__top:before, .about-mission__top:after {
   content: " ";
@@ -920,7 +922,7 @@ h1 {
   .about-mission__block-content {
     display: inline-block;
     vertical-align: top;
-    width: 210px;
+    width: 215px;
     padding-right: 10px; }
   .about-mission__block-title {
     font-size: 21px;

@@ -111,7 +111,11 @@
       }
 
       &:hover {
-        text-decoration: none;
+        color: #cd2c2c;
+
+        &:after {
+          background: url(../img/press-tick-hover.png) 0 0 no-repeat;
+        }
       }
     }
 
@@ -451,6 +455,8 @@
   }
 
   &__calculator {
+    height: 240px;
+
     &-top {
       border-bottom: 1px solid #939393;
     }
