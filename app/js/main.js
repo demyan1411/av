@@ -24,6 +24,13 @@ $(document).ready(function() {
 		speed: 1000
 	});
 
+	$('.js-post-slider').slick({
+		dots: true,
+		arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1
+	});
+
 	$('.js-calculator-button').on('click', function(){
 		$('.js-calculator-button').removeClass('active');
 		$('.main-content__calculator-form').hide()

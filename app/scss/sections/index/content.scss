@@ -335,8 +335,9 @@
 
   &__press {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     &-block {
       flex-basis: 320px;
@@ -344,6 +345,7 @@
       padding: 16px 27px 18px 18px;
       position: relative;
       overflow: hidden;
+      margin-bottom: 20px;
 
       &--anons {
         background: #e6e7e8;

@@ -141,13 +141,10 @@ gulp.task('clean', function() {
 
 // минифицируем css js кладём в дист
 gulp.task('useref', function () {
-	var assets = useref.assets();
 	return gulp.src('app/*.html')
-		.pipe(assets)
+		.pipe(useref())
 		.pipe(gulpif('*.js', uglify()))
 		.pipe(gulpif('*.css', minifyCss({compatibility: 'ie8'})))
-		.pipe(assets.restore())
-		.pipe(useref())
 		.pipe(gulp.dest('dist'));
 });
 
