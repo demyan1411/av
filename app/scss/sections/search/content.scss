@@ -1,0 +1,145 @@
+.search {
+  &__block {
+    border-bottom: 1px solid #cd2c2c;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+
+  &__form {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    border: 1px solid #cd2c2c;
+    font-size: 16px;
+    line-height: 38px;
+    padding: 0 18px;
+    display: block;
+    width: 100%;
+    color: #616369;
+  }
+
+  &__button {
+    width: 16px;
+    height: 16px;
+    background: url('../img/search.jpg') 0 0 no-repeat;
+    border: 0;
+    position: absolute;
+    top: 13px;
+    right: 14px;
+  }
+
+  &__text-block {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+
+  &__slider {
+    width: 100%;
+    font-size: 0;
+    text-align: center;
+    margin: 0 auto 20px;
+
+    .slick-arrow {
+      width: 25px;
+      height: 197px;
+      background: #dedfe1;
+      z-index: 1;
+
+      &:before {
+        content: '';
+        width: 7px;
+        height: 12px;
+        display: block;
+      }
+
+      &:hover {
+        background: #74767d;
+      }
+    }
+
+    .slick-prev {
+      left: 0;
+
+      &:before {
+        background: url('../img/search/prev.png') 0 0 no-repeat;
+        margin-left: 8px;
+      }
+    }
+
+    .slick-next {
+      right: 0;
+
+      &:before {
+        background: url('../img/search/next.png') 0 0 no-repeat;
+        margin-left: 10px;
+      }
+    }
+
+    .slick-list {
+      width: 830px;
+      height: 197px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+  }
+
+  &__slide {
+    // width: 150px !important;
+    height: 197px;
+    position: relative;
+    margin: 0 10px;
+    outline: 0;
+
+    &--top {
+      background: #636466;
+      color: #fff;
+      text-decoration: underline;
+      padding: 8px 20px 8px 7px;
+      font-size: 16px;
+      line-height: 19px;
+      display: block;
+      text-align: left;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__list {
+    width: 590px;
+  }
+
+  &__title {
+    font-family: $helios;
+    text-transform: uppercase;
+    color: #585857;
+    font-size: 27px;
+    line-height: 30px;
+    display: inline-block;
+    text-decoration: underline;
+    margin-bottom: 5px;
+
+    &:hover {
+      color: #cd2c2c;
+    }
+  }
+
+  &__date {
+    font-size: 12px;
+    line-height: 15px;
+    color: #757575;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-size: 16px;
+    color: #616369;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+  }
+}

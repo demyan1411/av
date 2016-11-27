@@ -1,0 +1,168 @@
+.service {
+  &_block {
+    @include cl;
+
+    &__left {
+      float: left;
+      width: 625px;
+    }
+
+    &__title {
+      font-family: $helios;
+      text-transform: uppercase;
+      font-size: 27px;
+      line-height: 30px;
+      margin-bottom: 15px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+
+    &__right {
+      float: right;
+      width: 320px;
+    }
+
+    &__bd {
+      padding: 9px 0;
+      border-bottom: 1px solid #cd2c2c;
+      border-top: 1px solid #cd2c2c;
+      margin: 45px 0;
+    }
+
+    &__slide {
+      outline: 0;
+
+      img {
+        width: 100%;
+      }
+
+      &--text {
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 5px;
+      }
+    }
+
+    .slick-dots {
+      bottom: auto;
+      top: 155px;
+    }
+  }
+}
+
+.fz-16 {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.text-red {
+  color: #cd2c2c;
+}
+
+.rb-list {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.rb-item {
+  margin-bottom: 20px;
+
+  &:before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background: #cd2c2c;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 7px;
+    border-radius: 10px;
+  }
+}
+
+.accordion {
+  width: 100%;
+  margin-bottom: 80px;
+
+  &__content {
+    @include cl;
+  }
+
+  &__button {
+    background: #e6e7e8;
+    padding: 14px 0 11px;
+    padding-left: 10px;
+    display: block;
+    margin-bottom: 3px;
+    position: relative;
+
+    &:hover .accordion__link {
+      border-bottom: 1px solid transparent;
+    }
+
+    &:after {
+      content: '';
+      border: 5px solid transparent;
+      border-top: 5px solid #636466;
+      position: absolute;
+      top: 21px;
+      right: 20px;
+    }
+
+    &.active:after {
+      border: 5px solid transparent;
+      border-bottom: 5px solid #636466;
+      top: 15px;
+    }
+  }
+
+  &__link {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 20px;
+    display: inline-block;
+    border-bottom: 1px dashed #616369;
+  }
+
+  &__block {
+    @include cl;
+    margin-top: 25px;
+
+    &:last-child {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__left {
+    float: left;
+    margin-right: 15px;
+  }
+
+  &__right {
+    width: 550px;
+  }
+
+  &__title {
+    font-family: $helios;
+    font-size: 27px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  &__close {
+    float: right;
+    font-size: 14px;
+    line-height: 15px;
+    border-bottom: 1px dashed #616369;
+    display: inline-block;
+    margin-bottom: 20px;
+
+    &:hover {
+      border-bottom: 1px solid transparent;
+    }
+  }
+}

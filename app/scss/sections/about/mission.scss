@@ -111,6 +111,69 @@
   }
 }
 
+.slider_block {
+  @include cl;
+
+  &__slider {
+    float: right;
+    width: 666px;
+    height: 420px;
+
+    .slick-dots {
+      bottom: 17px;
+    }
+  }
+
+  &__slide {
+    outline: 0;
+    height: 420px;
+  }
+
+  &__left {
+    float: left;
+    width: 310px;
+    padding-right: 12px;
+  }
+
+  &__title {
+    font-size: 27px;
+    line-height: 31px;
+    color: #616369;
+    text-transform: uppercase;
+    font-family: $helios;
+    margin-bottom: 17px;
+  }
+
+  &__red {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: $seraMed;
+    color: #cd2c2c;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 45px;
+  }
+
+  &__top {
+    @include cl;
+  }
+
+  &__left--310 {
+    width: 310px;
+  }
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
 @media screen and (max-width: 1120px) {
   .about-mission {
     &__left {

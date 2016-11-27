@@ -1,0 +1,92 @@
+.social_responsibility {
+  .all-items {
+    margin-top: 10px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  &__item {
+    width: 205px;
+  }
+
+  &__image {
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  &__number {
+    display: inline-block;
+    vertical-align: top;
+    font-family: $helios;
+    font-size: 60px;
+    line-height: 46px;
+    color: #cd2c2c;
+    margin-right: 5px;
+  }
+
+  &__right {
+    display: inline-block;
+    vertical-align: top;
+    width: 165px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .slider_block {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.documents {
+  font-size: 16px;
+  line-height: 15px;
+  width: 200px;
+
+  .document {
+    margin-bottom: 15px;
+
+    &__link {
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      &:after {
+        content: '';
+        width: 19px;
+        height: 20px;
+        background: url('../img/pdf.png') 0 0 no-repeat;
+        display: inline-block;
+        margin-left: 5px;
+        margin-bottom: -3px;
+      }
+    }
+  }
+}
+
+.border-block  {
+  border-bottom: 1px solid #cd2c2c;
+}
+
+.links {
+  margin-top: 20px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}

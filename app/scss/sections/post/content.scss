@@ -1,10 +1,4 @@
 .post {
-  &__block {
-    background: url(../img/post_block.jpg) center 0 no-repeat;
-    height: 50px;
-    margin-bottom: 30px;
-  }
-
   &__left {
     float: left;
     width: 645px;
@@ -187,32 +181,37 @@
     .main-content__press {
       margin-bottom: 15px;
     }
+  }
+}
 
-    .all-news {
-      font-family: "SeroOffcPro-Medium";
-      font-size: 14px;
-      line-height: 17px;
-      text-decoration: underline;
-      margin-top: -15px;
-      display: inline-block;
+.all-items {
+  font-family: "SeroOffcPro-Medium";
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: underline;
+  display: inline-block;
 
-      &:after {
-        content: '';
-        background: url(../img/press-tick.png) 0 0 no-repeat;
-        width: 18px;
-        height: 18px;
-        display: inline-block;
-        vertical-align: middle;
-        margin-left: 2px;
-      }
+  &:after {
+    content: '';
+    background: url(../img/press-tick.png) 0 0 no-repeat;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2px;
+  }
 
-      &:hover {
-        color: #cd2c2c;
+  &:hover {
+    color: #cd2c2c;
 
-        &:after {
-          background: url(../img/press-tick-hover.png) 0 0 no-repeat;
-        }
-      }
+    &:after {
+      background: url(../img/press-tick-hover.png) 0 0 no-repeat;
     }
   }
+}
+
+.top-grey {
+  background: url(../img/post_block.jpg) center 0 no-repeat;
+  height: 50px;
+  margin-bottom: 30px;
 }

@@ -1,0 +1,41 @@
+.top-block {
+  color: #f4f3f2;
+
+  &__block{
+    height: 314px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    padding-top: 45px;
+    outline: 0;
+  }
+
+  &__content {
+    width: 590px;
+  }
+
+  &__title {
+    border-bottom: 2px solid #f4f3f2;
+    border-top: 2px solid #f4f3f2;
+    padding: 17px 0 15px;
+    margin-bottom: 25px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &__link {
+    color: #d2d2d2;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

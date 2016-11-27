@@ -10,17 +10,6 @@
     background-position: center 0;
     padding-top: 85px;
     outline: 0;
-    position: relative;
-
-    &:before {
-      content: '';
-      display: block;
-      width: 602px;
-      height: 632px;
-      background: url(../img/billet.png) 0 0 no-repeat;
-      position: absolute;
-      top: 0;
-    }
   }
 
   .slick-dots {

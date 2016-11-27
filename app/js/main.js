@@ -14,6 +14,13 @@ $(document).ready(function() {
     slidesToScroll: 1
 	});
 
+	$('.service_block__slider').slick({
+		dots: true,
+		arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1
+	});
+
 	$('.js-main-block-slider').slick({
 		dots: true,
 		arrows: false,
@@ -31,6 +38,13 @@ $(document).ready(function() {
     slidesToScroll: 1
 	});
 
+	$('.js-search-slider').slick({
+		arrows: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+		// centerMode: true,
+	});
+
 	$('.js-calculator-button').on('click', function(){
 		$('.js-calculator-button').removeClass('active');
 		$('.main-content__calculator-form').hide()
@@ -41,7 +55,7 @@ $(document).ready(function() {
 		$('.js-' + calcBlock).show();
 	});
 
-	$('.about-mission__slider').slick({
+	$('.slider_block__slider').slick({
 		dots: true,
 		arrows: false,
     slidesToShow: 1,
@@ -82,11 +96,53 @@ $(document).ready(function() {
 	resizeSlider();
 	$(window).on('resize', function () {
 		resizeSlider();
-	})
+	});
+
+	var allPanels = $('.accordion__content').hide();
+	$('.js-accordion-button').on('click', function (e) {
+		e.preventDefault();
+		var $this = $(this);
+
+		if ($this.hasClass('active')) {
+			$this.removeClass('active').next().slideUp();
+			return;
+		}
+
+		allPanels.slideUp();
+		$('.js-accordion-button').removeClass('active');
+		$this.addClass('active').next().slideToggle();
+	});
+
+	$('.accordion__close').on('click', function (e) {
+		e.preventDefault();
+		$(this).closest('.accordion__content').slideUp().prev().removeClass('active');
+	});
+
+	$('.js-filter-button').on('click', function (e) {
+		e.preventDefault();
+		$('.js-filter-select').toggleClass('active');
+	});
+
+	$('.js-filter-option').on('click', function (e) {
+		e.preventDefault();
+		var text = $(this).text();
+		$('.js-filter-button').text(text);
+		$('.js-filter-select').removeClass('active');
+
+		filterServices();
+	});
+
+	// $('.services .main-content__info-text').css({
+	// 	'height': 123 + 'px'
+	// });
 }); // end ready
 
 function resizeSlider() {
 	if ($(window).width() < 1520 && $(window).width() > 980) {
 		$('.js-main-block-slider').css('width', $(window).width() + 'px');
 	}
+}
+
+function filterServices() {
+	console.log('Ajax');
 }

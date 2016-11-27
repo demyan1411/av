@@ -10,6 +10,10 @@
     display: flex;
     justify-content: space-between;
 
+    &--wrap {
+      flex-wrap: wrap;
+    }
+
     &--products {
       .main-content__info {
         height: 230px;
@@ -47,6 +51,11 @@
 
   &__info {
     position: relative;
+
+    &-subtitle {
+      text-transform: none;
+      margin-top: 5px;
+    }
 
     &--470 {
       flex-basis: 470px;
