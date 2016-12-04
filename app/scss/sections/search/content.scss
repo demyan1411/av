@@ -10,6 +10,10 @@
     margin-bottom: 20px;
   }
 
+  &__request {
+    background: #d8d8db;
+  }
+
   &__input {
     border: 1px solid #cd2c2c;
     font-size: 16px;
@@ -40,6 +44,10 @@
     font-size: 0;
     text-align: center;
     margin: 0 auto 20px;
+
+    .min-infoBlock {
+      margin: 0 6px;
+    }
 
     .slick-arrow {
       width: 25px;
@@ -78,7 +86,7 @@
     }
 
     .slick-list {
-      width: 830px;
+      width: 960px;
       height: 197px;
       margin: 0 auto;
       overflow: hidden;

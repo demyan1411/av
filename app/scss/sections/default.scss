@@ -80,6 +80,18 @@ h1 {
 	}
 }
 
+.before-red {
+	&:before {
+		content: '';
+		display: inline-block;
+		vertical-align: top;
+		width: 14px;
+		height: 14px;
+		background: url(../img/red-tick.png) 0 0 no-repeat;
+		margin-right: 5px;
+	}
+}
+
 .title-grey {
 	font-family: $helios;
 	font-size: 27px;
@@ -98,16 +110,40 @@ h1 {
 	font-weight: bold;
 }
 
+.mb-5 {
+	margin-bottom: 5px;
+}
+
+.pt-10 {
+	padding-top: 10px;
+}
+
 .mb-10 {
 	margin-bottom: 10px;
+}
+
+.mb-15 {
+	margin-bottom: 15px;
 }
 
 .mb-20 {
 	margin-bottom: 20px;
 }
 
+.db {
+	display: block;
+}
+
+.mt-20 {
+	margin-top: 20px;
+}
+
 .mb-30 {
 	margin-bottom: 30px;
+}
+
+.mt-25 {
+	margin-top: 25px;
 }
 
 .mt-50 {
@@ -136,6 +172,18 @@ h1 {
 
 .w-360 {
 	width: 360px;
+}
+
+.w-270 {
+	width: 270px;
+}
+
+.w-340 {
+	width: 340px;
+}
+
+.w-380 {
+	width: 380px;
 }
 
 .p-y-9 {
@@ -180,6 +228,15 @@ h1 {
 	}
 }
 
+.link {
+	font-weight: bold;
+	text-decoration: underline;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
 .table {
 	display: table;
 	width: 100%;
@@ -200,6 +257,10 @@ h1 {
 .m-lr-10 {
 	margin-left: 10px;
 	margin-right: 10px;
+}
+
+.mr--20 {
+	margin-right: -20px;
 }
 
 .min-infoBlock {
@@ -227,6 +288,49 @@ h1 {
 .flex {
 	display: flex;
 }
+
 .jc-sb {
 	justify-content: space-between;
+}
+
+.jc-fs {
+	justify-content: flex-start;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.hidden {
+	display: none;
+}
+
+.h-bd-t {
+	cursor: pointer;
+
+	&:hover {
+		border-bottom: 1px solid transparent;
+	}
+}
+
+.bdb-dashed {
+	border-bottom: 1px dashed #616369;
+}
+
+.fw-w {
+	flex-wrap: wrap;
+
+	.min-infoBlock {
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+.filter__title {
+	color: #616369;
+	font-size: 27px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-family: $helios;
+	margin-bottom: 15px;
 }

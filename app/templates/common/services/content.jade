@@ -37,11 +37,14 @@
           img(src="img/services/slide1.jpg", alt="")
           a.service_block__slide--text.d-ib(href="") Каменная промышленность
 
-    .filter
+    .filter.js-filter
       .filter__text Фильтр продукции:
       .filter__block
         a.filter__button.js-filter-button(href="") Все виды работ
         ul.filter__list.js-filter-select
+          li.filter__item
+            a.filter__link.js-filter-option(href="") Все виды работ
+
           li.filter__item
             a.filter__link.js-filter-option(href="") Открытые работы
 
@@ -51,90 +54,169 @@
           li.filter__item
             a.filter__link.js-filter-option(href="") Спецработы
 
-    .main-content__title
-      a.main-content__title-link(href="") Взрывчатые вещества
+    .filter__variant1
+      .main-content__title
+        a.main-content__title-link(href="") Взрывчатые вещества
 
-    .main-content__block.main-content__block--wrap.main-content__block--products
-      .main-content__info.main-content__info--320(style="background: url(img/products-img1.jpg) 0 0 no-repeat")
-        .main-content__info-title
-          | Патронированные
-          .main-content__info-subtitle  взрывчатые вещества
-        .main-content__info-text
-          a.main-content__info--text-link(href="") Нитронит-П
-          |  &#8226;&nbsp;
-          a.main-content__info--text-link(href="") Нитронит-ПАС
+      .main-content__block.main-content__block--wrap.main-content__block--products
+        .main-content__info.main-content__info--320(style="background: url(img/products-img1.jpg) 0 0 no-repeat")
+          .main-content__info-title
+            | Патронированные
+            .main-content__info-subtitle  взрывчатые вещества
+          .main-content__info-text
+            a.main-content__info--text-link(href="") Нитронит-П
+            |  &#8226;&nbsp;
+            a.main-content__info--text-link(href="") Нитронит-ПАС
 
-      .main-content__info.main-content__info--320(style="background: url(img/products-img2.jpg) 0 0 no-repeat")
-        .main-content__info-title Средства инициирования
-        .main-content__info-text
-          | Группа компаний «Азот-Взрыв» производит широкий перечень промышленных взрывчатых веществ в разных регионах России, включая эмульсионные, смесевые, простейшие ВВ.
+        .main-content__info.main-content__info--320(style="background: url(img/products-img2.jpg) 0 0 no-repeat")
+          .main-content__info-title Средства инициирования
+          .main-content__info-text
+            | Группа компаний «Азот-Взрыв» производит широкий перечень промышленных взрывчатых веществ в разных регионах России, включая эмульсионные, смесевые, простейшие ВВ.
 
-          a.main-content__info-link(href="") Каталог
+            a.main-content__info-link(href="") Каталог
 
-      .main-content__info.main-content__info--320(style="background: url(img/products-img3.jpg) 0 0 no-repeat")
-        .main-content__info-title Техника и оборудование
-        .main-content__info-text
-          | Группа компаний «Азот-Взрыв» производит широкий перечень промышленных взрывчатых веществ в разных регионах России, включая эмульсионные, смесевые, простейшие ВВ.
+        .main-content__info.main-content__info--320(style="background: url(img/products-img3.jpg) 0 0 no-repeat")
+          .main-content__info-title Техника и оборудование
+          .main-content__info-text
+            | Группа компаний «Азот-Взрыв» производит широкий перечень промышленных взрывчатых веществ в разных регионах России, включая эмульсионные, смесевые, простейшие ВВ.
 
-          a.main-content__info-link(href="") Каталог
+            a.main-content__info-link(href="") Каталог
 
-    .main-content__title
-      a.main-content__title-link(href="") Средства инициирования
+      .main-content__title
+        a.main-content__title-link(href="") Средства инициирования
 
-    .main-content__block.main-content__block--wrap.main-content__block--products.main-content__flex-start
-      .main-content__info.main-content__info--320(style="background: url(img/products-img1.jpg) 0 0 no-repeat")
-        .main-content__info-title
-          | Патронированные
-          .main-content__info-subtitle  взрывчатые вещества
-        .main-content__info-text
-          a.main-content__info--text-link(href="") Нитронит-П
-          |  &#8226;&nbsp;
-          a.main-content__info--text-link(href="") Нитронит-ПАС
+      .main-content__block.main-content__block--wrap.main-content__block--products.main-content__flex-start
+        .main-content__info.main-content__info--320(style="background: url(img/products-img1.jpg) 0 0 no-repeat")
+          .main-content__info-title
+            | Патронированные
+            .main-content__info-subtitle  взрывчатые вещества
+          .main-content__info-text
+            a.main-content__info--text-link(href="") Нитронит-П
+            |  &#8226;&nbsp;
+            a.main-content__info--text-link(href="") Нитронит-ПАС
 
-      .main-content__info.main-content__info--320(style="background: url(img/products-img2.jpg) 0 0 no-repeat")
-        .main-content__info-title Средства инициирования
-        .main-content__info-text
-          | Группа компаний «Азот-Взрыв» производит широкий перечень промышленных взрывчатых веществ в разных регионах России, включая эмульсионные, смесевые, простейшие ВВ.
+        .main-content__info.main-content__info--320(style="background: url(img/products-img2.jpg) 0 0 no-repeat")
+          .main-content__info-title Средства инициирования
+          .main-content__info-text
+            | Группа компаний «Азот-Взрыв» производит широкий перечень промышленных взрывчатых веществ в разных регионах России, включая эмульсионные, смесевые, простейшие ВВ.
 
-          a.main-content__info-link(href="") Каталог
+            a.main-content__info-link(href="") Каталог
 
-      .main-content__info.main-content__info--320(style="background: url(img/products-img3.jpg) 0 0 no-repeat")
-        .main-content__info-title Техника и оборудование
-        .main-content__info-text
-          | Группа компаний «Азот-Взрыв» производит широкий перечень промышленных взрывчатых веществ в разных регионах России, включая эмульсионные, смесевые, простейшие ВВ.
+        .main-content__info.main-content__info--320(style="background: url(img/products-img3.jpg) 0 0 no-repeat")
+          .main-content__info-title Техника и оборудование
+          .main-content__info-text
+            | Группа компаний «Азот-Взрыв» производит широкий перечень промышленных взрывчатых веществ в разных регионах России, включая эмульсионные, смесевые, простейшие ВВ.
 
-          a.main-content__info-link(href="") Каталог
+            a.main-content__info-link(href="") Каталог
 
-      .main-content__info.main-content__info--320(style="background: url(img/products-img2.jpg) 0 0 no-repeat")
-        .main-content__info-title Средства инициирования
-        .main-content__info-text
-          | Группа компаний «Азот-Взрыв» производит широкий перечень промышленных взрывчатых веществ в разных регионах России, включая эмульсионные, смесевые, простейшие ВВ.
+        .main-content__info.main-content__info--320(style="background: url(img/products-img2.jpg) 0 0 no-repeat")
+          .main-content__info-title Средства инициирования
+          .main-content__info-text
+            | Группа компаний «Азот-Взрыв» производит широкий перечень промышленных взрывчатых веществ в разных регионах России, включая эмульсионные, смесевые, простейшие ВВ.
 
-          a.main-content__info-link(href="") Каталог
+            a.main-content__info-link(href="") Каталог
 
-      .main-content__info.main-content__info--320(style="background: url(img/products-img3.jpg) 0 0 no-repeat")
-        .main-content__info-title Техника и оборудование
-        .main-content__info-text
-          | Группа компаний «Азот-Взрыв» производит широкий перечень промышленных взрывчатых веществ в разных регионах России, включая эмульсионные, смесевые, простейшие ВВ.
+        .main-content__info.main-content__info--320(style="background: url(img/products-img3.jpg) 0 0 no-repeat")
+          .main-content__info-title Техника и оборудование
+          .main-content__info-text
+            | Группа компаний «Азот-Взрыв» производит широкий перечень промышленных взрывчатых веществ в разных регионах России, включая эмульсионные, смесевые, простейшие ВВ.
 
-          a.main-content__info-link(href="") Каталог
+            a.main-content__info-link(href="") Каталог
 
-    .main-content__title
-      a.main-content__title-link(href="") Оборудование
+      .main-content__title
+        a.main-content__title-link(href="") Оборудование
 
-    .main-content__block.main-content__block--wrap.main-content__block--products.main-content__flex-start
-      .main-content__info.main-content__info--320(style="background: url(img/products-img1.jpg) 0 0 no-repeat")
-        .main-content__info-title
-          | Патронированные
-          .main-content__info-subtitle  взрывчатые вещества
-        .main-content__info-text
-          a.main-content__info--text-link(href="") Нитронит-П
-          |  &#8226;&nbsp;
-          a.main-content__info--text-link(href="") Нитронит-ПАС
+      .main-content__block.main-content__block--wrap.main-content__block--products.main-content__flex-start
+        .main-content__info.main-content__info--320(style="background: url(img/products-img1.jpg) 0 0 no-repeat")
+          .main-content__info-title
+            | Патронированные
+            .main-content__info-subtitle  взрывчатые вещества
+          .main-content__info-text
+            a.main-content__info--text-link(href="") Нитронит-П
+            |  &#8226;&nbsp;
+            a.main-content__info--text-link(href="") Нитронит-ПАС
 
-      .main-content__info.main-content__info--320(style="background: url(img/products-img2.jpg) 0 0 no-repeat")
-        .main-content__info-title Средства инициирования
-        .main-content__info-text
-          | Группа компаний «Азот-Взрыв» производит широкий перечень промышленных взрывчатых веществ в разных регионах России, включая эмульсионные, смесевые, простейшие ВВ.
+        .main-content__info.main-content__info--320(style="background: url(img/products-img2.jpg) 0 0 no-repeat")
+          .main-content__info-title Средства инициирования
+          .main-content__info-text
+            | Группа компаний «Азот-Взрыв» производит широкий перечень промышленных взрывчатых веществ в разных регионах России, включая эмульсионные, смесевые, простейшие ВВ.
 
-          a.main-content__info-link(href="") Каталог
+            a.main-content__info-link(href="") Каталог
+
+
+    .filter__variant2
+      .main-content__title
+        a.main-content__title-link(href="") Взрывчатые вещества
+
+      ul.flex.jc-fs.fw-w.mr--20
+        li.min-infoBlock(style="background: url(img/product/product1.jpg) 0 bottom no-repeat")
+          a.min-infoBlock--top(href="#") Нитронит-П
+
+        li.min-infoBlock(style="background: url(img/product/product1.jpg) 0 bottom no-repeat")
+          a.min-infoBlock--top(href="#") Нитронит-ПАС
+
+      .main-content__title
+        a.main-content__title-link(href="") Средства инициирования
+
+      ul.flex.jc-fs.fw-w.mb-50.mr--20
+        li.min-infoBlock(style="background: url(img/product/product1.jpg) 0 bottom no-repeat")
+          a.min-infoBlock--top(href="#") Нитронит-П
+
+        li.min-infoBlock(style="background: url(img/product/product1.jpg) 0 bottom no-repeat")
+          a.min-infoBlock--top(href="#") Нитронит-ПАС
+
+        li.min-infoBlock(style="background: url(img/search/slide1.jpg) 0 bottom no-repeat")
+          a.min-infoBlock--top(href="#")
+            .min-infoBlock__link Коршун-М
+            .min-infoBlock__link ДИН-П
+
+        li.min-infoBlock(style="background: url(img/search/slide1.jpg) 0 bottom no-repeat")
+          a.min-infoBlock--top(href="#")
+            .min-infoBlock__link Коршун-М
+            .min-infoBlock__link ДИН-П
+
+        li.min-infoBlock(style="background: url(img/search/slide1.jpg) 0 bottom no-repeat")
+          a.min-infoBlock--top(href="#")
+            .min-infoBlock__link Коршун-М
+            .min-infoBlock__link ДИН-П
+
+        li.min-infoBlock(style="background: url(img/search/slide1.jpg) 0 bottom no-repeat")
+          a.min-infoBlock--top(href="#")
+            .min-infoBlock__link Коршун-М
+            .min-infoBlock__link ДИН-П
+
+        li.min-infoBlock(style="background: url(img/product/product1.jpg) 0 bottom no-repeat")
+          a.min-infoBlock--top(href="#") Нитронит-П
+
+        li.min-infoBlock(style="background: url(img/product/product1.jpg) 0 bottom no-repeat")
+          a.min-infoBlock--top(href="#") Нитронит-ПАС
+
+        li.min-infoBlock(style="background: url(img/search/slide1.jpg) 0 bottom no-repeat")
+          a.min-infoBlock--top(href="#")
+            .min-infoBlock__link Коршун-М
+            .min-infoBlock__link ДИН-П
+
+        li.min-infoBlock(style="background: url(img/search/slide1.jpg) 0 bottom no-repeat")
+          a.min-infoBlock--top(href="#")
+            .min-infoBlock__link Коршун-М
+            .min-infoBlock__link ДИН-П
+
+        li.min-infoBlock(style="background: url(img/search/slide1.jpg) 0 bottom no-repeat")
+          a.min-infoBlock--top(href="#")
+            .min-infoBlock__link Коршун-М
+            .min-infoBlock__link ДИН-П
+
+        li.min-infoBlock(style="background: url(img/search/slide1.jpg) 0 bottom no-repeat")
+          a.min-infoBlock--top(href="#")
+            .min-infoBlock__link Коршун-М
+            .min-infoBlock__link ДИН-П
+
+        li.min-infoBlock(style="background: url(img/search/slide1.jpg) 0 bottom no-repeat")
+          a.min-infoBlock--top(href="#")
+            .min-infoBlock__link Коршун-М
+            .min-infoBlock__link ДИН-П
+
+        li.min-infoBlock(style="background: url(img/search/slide1.jpg) 0 bottom no-repeat")
+          a.min-infoBlock--top(href="#")
+            .min-infoBlock__link Коршун-М
+            .min-infoBlock__link ДИН-П

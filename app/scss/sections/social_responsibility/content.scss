@@ -10,7 +10,25 @@
   }
 
   &__item {
-    width: 205px;
+    width: auto;
+    position: relative;
+
+    &:after {
+      content: '';
+      background: url('../img/arrow.png') 0 0 no-repeat;
+      width: 62px;
+      height: 34px;
+      display: block;
+      position: absolute;
+      left: 100%;
+      top: 80px;
+    }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
   }
 
   &__image {
@@ -31,7 +49,7 @@
   &__right {
     display: inline-block;
     vertical-align: top;
-    width: 165px;
+    width: 155px;
   }
 
   &__title {

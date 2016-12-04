@@ -1,0 +1,34 @@
+.popup.js-popup
+  .popup__block
+    .popup__close.js-popup-close
+    .popup__content
+      .title-grey Отправить резюме
+      .fz-16.mb-10 Если вы хотите построить карьеру в компании запонтите пожалуйста форму.
+      .fz-16.mb-20 Мы сохраним ваше резюме в нашей базе, и специалисты свяжутся с вами при появлении соответствующих вакансий.
+
+      form.popup__form
+        label.db.mb-15
+          .fz-16.mb-5 Фамилия Имя *
+          input.popup__input.w-380(type='text', placeholder='Иванов Иван')
+
+        label.db.mb-15
+          .fz-16.mb-5 Контактрый телефон
+          input.popup__input.w-270(type='text', placeholder='+7999123456t')
+
+        label.db.mb-15
+          .fz-16.mb-5 email *
+          input.popup__input.w-340(type='text', placeholder='exsample@site.com')
+
+        label
+          .d-ib.fz-16.bold.bdb-dashed.h-bd-t Прикрепить резюме*
+          input.hidden(type='file')
+
+        span.popup__text-file (в формате doc, или pdf размером до 50kb)
+
+        input.popup__button.mt-25(type='submit', value='Отправить')
+
+        .fz-14.mb-10 Поля отмеченные звездочкой обязательны для заполнения.
+        .fz-14
+          | Нажимая кнопку «отправить» вы соглашаетсь на
+          = ' '
+          a.link(href='') обработку персональных данных.

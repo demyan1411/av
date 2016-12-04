@@ -6,7 +6,7 @@ include ../../mixins/top-block.jade
   .wrapper
     .search__block
       .main-content__title
-        a.main-content__title-link(href="") Поиск
+        .bold.before-red Поиск
 
       form.search__form
         input.search__input(placeholder="сервисное обслуживание")
@@ -15,32 +15,37 @@ include ../../mixins/top-block.jade
       .search__text-block Найдено в товарах:
 
       .search__slider.js-search-slider
-        .min-infoBlock.m-lr-10(style="background: url(img/search/slide1.jpg) 0 bottom no-repeat")
+        .min-infoBlock(style="background: url(img/search/slide1.jpg) 0 bottom no-repeat")
           a.min-infoBlock--top(href="#")
             .min-infoBlock__link Коршун-М
             .min-infoBlock__link ДИН-П
 
-        .min-infoBlock.m-lr-10(style="background: url(img/search/slide2.jpg) 0 bottom no-repeat")
+        .min-infoBlock(style="background: url(img/search/slide2.jpg) 0 bottom no-repeat")
           a.min-infoBlock--top(href="#")
             .min-infoBlock__link Коршун-М
             .min-infoBlock__link ДИН-С
 
-        .min-infoBlock.m-lr-10(style="background: url(img/search/slide3.jpg) 0 bottom no-repeat")
+        .min-infoBlock(style="background: url(img/search/slide3.jpg) 0 bottom no-repeat")
           a.min-infoBlock--top(href="#")
               .min-infoBlock__link Коршун-М
               .min-infoBlock__link ДИН-ПС
 
-        .min-infoBlock.m-lr-10(style="background: url(img/search/slide4.jpg) 0 bottom no-repeat")
+        .min-infoBlock(style="background: url(img/search/slide4.jpg) 0 bottom no-repeat")
           a.min-infoBlock--top(href="#")
             .min-infoBlock__link ЭД-8М1 +
             .min-infoBlock__link ЭД-3-Н
 
-        .min-infoBlock.m-lr-10(style="background: url(img/search/slide5.jpg) 0 bottom no-repeat")
+        .min-infoBlock(style="background: url(img/search/slide5.jpg) 0 bottom no-repeat")
           a.min-infoBlock--top(href="#")
             .min-infoBlock__link ЭД-1-3-Т +
             .min-infoBlock__link ЭД-1-8-Т
 
-        .min-infoBlock.m-lr-10(style="background: url(img/search/slide5.jpg) 0 bottom no-repeat")
+        .min-infoBlock(style="background: url(img/search/slide5.jpg) 0 bottom no-repeat")
+          a.min-infoBlock--top(href="#")
+            .min-infoBlock__link ЭД-1-3-Т +
+            .min-infoBlock__link ЭД-1-8-Т
+
+        .min-infoBlock(style="background: url(img/search/slide5.jpg) 0 bottom no-repeat")
           a.min-infoBlock--top(href="#")
             .min-infoBlock__link ЭД-1-3-Т +
             .min-infoBlock__link ЭД-1-8-Т
@@ -54,27 +59,47 @@ include ../../mixins/top-block.jade
         li.search__item
           a.search__title(href="") неэлектрические системы инициирования
           .search__date Изменен: 07.09.2015
-          .search__text ... Вся поставляемая продукция сопровождается необходимой нормативной и разрешительной документацией, по необходимости проводится обучение персонала Заказчика, сервисное обслуживание, помощь в получении разрешений на закупку и применение данной продукции на объектах Заказчика...
+          .search__text
+            | ... Вся поставляемая
+            = ' '
+            span.search__request продукция сопровождается
+            |  необходимой нормативной и разрешительной документацией, по необходимости проводится обучение персонала Заказчика, сервисное обслуживание, помощь в получении разрешений на закупку и применение данной продукции на объектах Заказчика...
 
         li.search__item
           a.search__title(href="") электродетонаторы
           .search__date Изменен: 02.05.2015
-          .search__text ... Вся поставляемая продукция сопровождается необходимой нормативной и разрешительной документацией, по необходимости проводится обучение персонала Заказчика, сервисное обслуживание, помощь в получении разрешений на закупку и применение данной продукции на объектах Заказчика...
+          .search__text
+            | ... Вся поставляемая
+            = ' '
+            span.search__request продукция сопровождается
+            |  необходимой нормативной и разрешительной документацией, по необходимости проводится обучение персонала Заказчика, сервисное обслуживание, помощь в получении разрешений на закупку и применение данной продукции на объектах Заказчика...
 
         li.search__item
           a.search__title(href="") детонирующие шнуры
           .search__date Изменен: 15.11.2014
-          .search__text ... Вся поставляемая продукция сопровождается необходимой нормативной и разрешительной документацией, по необходимости проводится обучение персонала Заказчика, сервисное обслуживание, помощь в получении разрешений на закупку и применение данной продукции на объектах Заказчика...
+          .search__text
+            | ... Вся поставляемая
+            = ' '
+            span.search__request продукция сопровождается
+            |  необходимой нормативной и разрешительной документацией, по необходимости проводится обучение персонала Заказчика, сервисное обслуживание, помощь в получении разрешений на закупку и применение данной продукции на объектах Заказчика...
 
         li.search__item
           a.search__title(href="") неэлектрические системы инициирования
           .search__date Изменен: 07.09.2015
-          .search__text ... Вся поставляемая продукция сопровождается необходимой нормативной и разрешительной документацией, по необходимости проводится обучение персонала Заказчика, сервисное обслуживание, помощь в получении разрешений на закупку и применение данной продукции на объектах Заказчика...
+          .search__text
+            | ... Вся поставляемая
+            = ' '
+            span.search__request продукция сопровождается
+            |  необходимой нормативной и разрешительной документацией, по необходимости проводится обучение персонала Заказчика, сервисное обслуживание, помощь в получении разрешений на закупку и применение данной продукции на объектах Заказчика...
 
         li.search__item
           a.search__title(href="") электродетонаторы
           .search__date Изменен: 02.05.2015
-          .search__text ... Вся поставляемая продукция сопровождается необходимой нормативной и разрешительной документацией, по необходимости проводится обучение персонала Заказчика, сервисное обслуживание, помощь в получении разрешений на закупку и применение данной продукции на объектах Заказчика...
+          .search__text
+            | ... Вся поставляемая
+            = ' '
+            span.search__request продукция сопровождается
+            |  необходимой нормативной и разрешительной документацией, по необходимости проводится обучение персонала Заказчика, сервисное обслуживание, помощь в получении разрешений на закупку и применение данной продукции на объектах Заказчика...
 
     .pages
       a.pages__link.pages__link--text(href="") предыдущая
