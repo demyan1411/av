@@ -99,10 +99,6 @@
     margin-bottom: 3px;
     position: relative;
 
-    &:hover .accordion__link {
-      border-bottom: 1px solid transparent;
-    }
-
     &:after {
       content: '';
       border: 5px solid transparent;
@@ -112,10 +108,29 @@
       right: 20px;
     }
 
-    &.active:after {
-      border: 5px solid transparent;
-      border-bottom: 5px solid #636466;
-      top: 15px;
+    &:hover {
+      .accordion__link {
+        border-bottom: 1px solid transparent;
+      }
+
+      &:after {
+        border-top: 5px solid #cd2c2c;
+      }
+    }
+
+    &.active {
+      &:after {
+        border: 5px solid transparent;
+        border-bottom: 5px solid #636466;
+        top: 15px;
+      }
+
+      &:hover {
+        &:after {
+          border: 5px solid transparent;
+          border-bottom: 5px solid #cd2c2c;
+        }
+      }
     }
   }
 

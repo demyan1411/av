@@ -170,6 +170,7 @@
 
       &:hover {
         color: #cd2c2c;
+        text-decoration: none;
       }
     }
   }
@@ -329,6 +330,7 @@
 
         &:hover {
           color: #cd2c2c;
+          text-decoration: none;
         }
       }
 
@@ -440,6 +442,7 @@
 
       &:hover {
         color: #cd2c2c;
+        text-decoration: none;
 
         &:after {
           background: url(../img/press-tick-hover.png) 0 0 no-repeat;
@@ -502,6 +505,7 @@
       &:hover {
         span {
           border-bottom: 1px solid transparent;
+          color: #cd2c2c;
         }
       }
 

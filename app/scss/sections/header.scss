@@ -29,6 +29,7 @@
     @include hl;
 
     &:hover {
+      color: #cd2c2c;
       text-decoration: none;
     }
   }
@@ -54,6 +55,7 @@
       text-decoration: underline;
 
       &:hover {
+        color: #cd2c2c;
         text-decoration: none;
       }
     }

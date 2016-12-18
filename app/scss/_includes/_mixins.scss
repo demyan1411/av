@@ -25,6 +25,9 @@
 	margin-top: 20px;
 
 	&__link {
+		color: #616369;
+		text-decoration: underline;
+
 		&:before {
 			content: '';
 			display: inline-block;
@@ -37,7 +40,7 @@
 
 		&:hover {
 			color: #cd2c2c;
-			text-decoration: underline;
+			text-decoration: none;
 		}
 	}
 }

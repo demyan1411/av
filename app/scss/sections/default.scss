@@ -278,11 +278,24 @@ h1 {
 		line-height: 19px;
 		display: block;
 		text-align: left;
-		height: 50px;
+		min-height: 50px;
 
 		&:hover {
 			text-decoration: none;
+
+			.min-infoBlock--hover {
+				visibility: visible;
+				height: auto;
+				font-size: 14px;
+			}
 		}
+	}
+
+	&--hover {
+		margin-top: 8px;
+		text-decoration: none;
+		visibility: hidden;
+		height: 0;
 	}
 }
 .flex {

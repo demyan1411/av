@@ -93,7 +93,9 @@
                 </div>
                 <div class="main-content__item-text"><strong>Адрес:</strong> 142784, г. Москва, деревня Говорово, 47 км МКАД, стр. 21<br><strong>Тел.:</strong> (495) 504-07-90, 504-07-91<br><strong>Факс:</strong> (495) 502-91-74<br><strong>E-mail:</strong> av@azotvryv.ru</div>
               </div>
-              <div class="main-content__info main-content__info--630"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=m67Bd-IrNoIWcTDbBYXk4JKxfUQQUmSy&amp;width=630&amp;height=350&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script></div>
+              <div class="main-content__info main-content__info--630">
+                <div id="map"></div>
+              </div>
             </div>
             <div class="main-content__title">
               <div class="bold before-red">Представительства</div>
@@ -284,11 +286,13 @@
     <!-- bower:js-->
     <script src="bower/jquery/dist/jquery.js"></script>
     <script src="/bower/slick-carousel/slick/slick.min.js"></script>
+    <script src="js/Ymaps.js"></script>
     <!-- endbower-->
     <!-- endbuild-->
     <!-- build:js js/main.min.js-->
     <script src="js/app.js"></script>
     <script src="js/modules.js"></script>
+    <script src="js/map.js"></script>
     <script src="js/main.js"></script>
     <!-- endbuild-->
   </body>
