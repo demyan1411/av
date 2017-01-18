@@ -69,6 +69,11 @@
     vertical-align: middle;
     position: relative;
     width: 180px;
+
+    &--big {
+      width: 235px;
+      margin-bottom: 20px;
+    }
   }
 
   &__button {

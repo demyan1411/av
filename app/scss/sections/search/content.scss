@@ -8,6 +8,21 @@
   &__form {
     position: relative;
     margin-bottom: 20px;
+
+    &--mini {
+      width: 320px;
+      .search__input {
+        border: 1px solid #97989b;
+        line-height: 26px;
+        font-size: 12px;
+        padding-left: 10px;
+      }
+
+      .search__button {
+        top: 7px;
+        outline: 0;
+      }
+    }
   }
 
   &__request {

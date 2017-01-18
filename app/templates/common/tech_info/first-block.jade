@@ -1,0 +1,208 @@
+include ../../mixins/top-block.jade
+
++top-block('img/tech_info.jpg')
+
+.main-content.press
+  .wrapper
+    .main-content__title
+      .bold.before-red Справочная информация
+
+    .main-content__block
+      .main-content__info.main-content__info--support
+        .main-content__title-big Расчет вместимости взрывчатого вещества
+        form.main-content__calculator-form
+          .main-content__calculator-block
+            .main-content__calculator-text Диаметр взрывчатого вещества
+            input.main-content__calculator-input(type="text", placeholder="0.00")
+            span.main-content__calculator-text мм
+
+          .main-content__calculator-block.main-content__calculator-block--last
+            .main-content__calculator-text Плотность заряжания
+            input.main-content__calculator-input(type="text", placeholder="0.00")
+            span.main-content__calculator-text г/см3
+
+          div
+            span.main-content__calculator-red.align-middle Вместимость на метр скважины
+
+            input.main-content__calculator-input.main-content__calculator-input--kg(type='text', placeholder='0')
+            span.main-content__calculator-kg кг
+
+      .main-content__info.main-content__info--support
+        .main-content__title-big Расчет выхода горной массы
+        form.main-content__calculator-form
+          .main-content__calculator-block
+            .main-content__calculator-text
+              | Расстояние между
+              br
+              | рядами скважин
+            input.main-content__calculator-input(type="text", placeholder="1.00")
+            span.main-content__calculator-text м
+
+          .main-content__calculator-block.main-content__calculator-block--last
+            .main-content__calculator-text
+              | Расстояние между
+              br
+              | скважинами в ряду
+            input.main-content__calculator-input(type="text", placeholder="1.00")
+            span.main-content__calculator-text м
+
+          div
+            span.main-content__calculator-red.align-middle Выход с погонного метра скважины
+
+            span.main-content__calculator-kg.align-middle
+              | 1м
+              sup 3
+
+    .main-content__title
+      .bold.before-red Инструкции и рекомендации
+
+    form.search__form.search__form--mini
+      input.search__input(placeholder="Поиск товара по названию или артикулу")
+      button.search__button
+
+    .service_block__title Инструкции
+
+    .filter.js-filter
+      .filter__text Фильтр:
+      .filter__block.filter__block--big
+        a.filter__button.js-filter-button(href="") Все продукты
+        ul.filter__list.js-filter-select
+          li.filter__item
+            a.filter__link.js-filter-option(href="") Все продукты
+
+          li.filter__item
+            a.filter__link.js-filter-option(href="") Открытые работы
+
+          li.filter__item
+            a.filter__link.js-filter-option(href="") Подземные работы
+
+          li.filter__item
+            a.filter__link.js-filter-option(href="") Спецработы
+
+    ul.flex.jc-fs.fw-w.mr--20
+      li
+        .min-infoBlock(style="background: url(img/product/product1.jpg) 0 bottom no-repeat")
+          a.min-infoBlock--top(href="#") Нитронит-П
+
+        .min-infoBlock--links
+          a.min-infoBlock--link(href="#") Инструкция по использованию
+          a.min-infoBlock--link(href="#") Рекомендации по технической безопасности
+
+      li
+        .min-infoBlock(style="background: url(img/product/product1.jpg) 0 bottom no-repeat")
+          a.min-infoBlock--top(href="#") Нитронит-П
+
+        .min-infoBlock--links
+          a.min-infoBlock--link(href="#") Инструкция по использованию
+          a.min-infoBlock--link(href="#") Рекомендации по технической безопасности
+
+      li
+        .min-infoBlock(style="background: url(img/product/product1.jpg) 0 bottom no-repeat")
+          a.min-infoBlock--top(href="#") Нитронит-П
+
+        .min-infoBlock--links
+          a.min-infoBlock--link(href="#") Инструкция по использованию
+          a.min-infoBlock--link(href="#") Рекомендации по технической безопасности
+
+      li
+        .min-infoBlock(style="background: url(img/product/product1.jpg) 0 bottom no-repeat")
+          a.min-infoBlock--top(href="#") Нитронит-П
+
+        .min-infoBlock--links
+          a.min-infoBlock--link(href="#") Инструкция по использованию
+          a.min-infoBlock--link(href="#") Рекомендации по технической безопасности
+
+      li
+        .min-infoBlock(style="background: url(img/product/product1.jpg) 0 bottom no-repeat")
+          a.min-infoBlock--top(href="#") Нитронит-П
+
+        .min-infoBlock--links
+          a.min-infoBlock--link(href="#") Инструкция по использованию
+          a.min-infoBlock--link(href="#") Рекомендации по технической безопасности
+
+      li
+        .min-infoBlock(style="background: url(img/product/product1.jpg) 0 bottom no-repeat")
+          a.min-infoBlock--top(href="#") Нитронит-П
+
+        .min-infoBlock--links
+          a.min-infoBlock--link(href="#") Инструкция по использованию
+          a.min-infoBlock--link(href="#") Рекомендации по технической безопасности
+
+      .clearfix.text-xs-right
+        a.instructions(href='#') Все инструкции
+
+    .service_block__title Рекомендации
+    .tech_info__slider
+      a.main-content__press-block(href="", style="background: url(img/press1.jpg) 0 0 no-repeat")
+        .main-content__press-move
+          .main-content__press-title Название документа,
+          .main-content__press-text
+            | описание несколько слов, или предложение
+            .main-content__press-link Подробнее
+
+      a.main-content__press-block(href="", style="background: url(img/press1.jpg) 0 0 no-repeat")
+        .main-content__press-move
+          .main-content__press-title Название документа,
+          .main-content__press-text
+            | описание несколько слов, или предложение
+
+      a.main-content__press-block(href="", style="background: url(img/press1.jpg) 0 0 no-repeat")
+        .main-content__press-move
+          .main-content__press-title Название документа,
+          .main-content__press-text
+            | описание несколько слов, или предложение
+
+      a.main-content__press-block(href="", style="background: url(img/press1.jpg) 0 0 no-repeat")
+        .main-content__press-move
+          .main-content__press-title ГК «АЗОТ-ВЗРЫВ» взорвала 1 миллиард кубов горной массы
+          .main-content__press-text
+            | Благодарим всех, кто посетил наш стенд на 7й международной выставке EFEE 2013 в Москве. Выставка прошла успешно. Мы будем рады новой встрече и взаимовыгодному сотрудничеству!
+
+            .main-content__press-link Подробнее
+
+
+    .main-content__title.mt-20
+      .bold.before-red Лицензии и сертификаты
+
+    .my-30
+      .license
+        img.license__img(src='img/license-mini.jpg')
+        .license__block
+          .license__title Лицензия
+          .license__text на осуществление деятельности, связанной  с обращением взрывчатых материалов промышленного назначения
+          .license__link Увеличить
+
+      .license
+        img.license__img(src='img/license-mini.jpg')
+        .license__block
+          .license__title Лицензия
+          .license__text на осуществление деятельности, связанной  с обращением взрывчатых материалов промышленного назначения
+          .license__link Увеличить
+
+      .license
+        img.license__img(src='img/license-mini.jpg')
+        .license__block
+          .license__title Лицензия
+          .license__text на осуществление деятельности, связанной  с обращением взрывчатых материалов промышленного назначения
+          .license__link Увеличить
+
+      .license
+        img.license__img(src='img/license-mini.jpg')
+        .license__block
+          .license__title Лицензия
+          .license__text на осуществление деятельности, связанной  с обращением взрывчатых материалов промышленного назначения
+          .license__link Увеличить
+
+      .license
+        img.license__img(src='img/license-mini.jpg')
+        .license__block
+          .license__title Лицензия
+          .license__text на осуществление деятельности, связанной  с обращением взрывчатых материалов промышленного назначения
+          .license__link Увеличить
+
+      .license
+        img.license__img(src='img/license-mini.jpg')
+        .license__block
+          .license__title Лицензия
+          .license__text на осуществление деятельности, связанной  с обращением взрывчатых материалов промышленного назначения
+          .license__link Увеличить

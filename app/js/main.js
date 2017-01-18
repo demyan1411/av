@@ -106,6 +106,13 @@ $(document).ready(function() {
     slidesToScroll: 1
 	});
 
+	$('.tech_info__slider').slick({
+		dots: false,
+		arrows: true,
+		slidesToShow: 3,
+		slidesToScroll: 1
+	});
+
 	resizeSlider();
 	$(window).on('resize', function () {
 		resizeSlider();

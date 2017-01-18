@@ -134,6 +134,10 @@ h1 {
 .mb-30 {
   margin-bottom: 30px; }
 
+.my-30 {
+  margin-bottom: 30px;
+  margin-top: 30px; }
+
 .mt-25 {
   margin-top: 25px; }
 
@@ -189,6 +193,9 @@ h1 {
   .td-u:hover {
     text-decoration: none; }
 
+.align-middle {
+  vertical-align: middle !important; }
+
 .pdf-red:after {
   content: '';
   width: 31px;
@@ -225,10 +232,31 @@ h1 {
   margin-right: -20px; }
 
 .min-infoBlock {
+  display: inline-block;
+  vertical-align: top;
   width: 150px;
   height: 197px;
   position: relative;
   outline: 0; }
+  .min-infoBlock--links {
+    display: inline-block;
+    vertical-align: top;
+    width: 120px;
+    margin-right: 50px;
+    margin-left: -10px; }
+  .min-infoBlock--link {
+    display: block;
+    margin-bottom: 12px;
+    text-decoration: underline; }
+    .min-infoBlock--link:hover {
+      text-decoration: none; }
+    .min-infoBlock--link:after {
+      content: '';
+      background: url("../img/pdf-red.jpg") 0 0 no-repeat;
+      width: 24px;
+      height: 24px;
+      background-size: cover;
+      display: block; }
   .min-infoBlock--top {
     background: #636466;
     color: #fff;
@@ -287,6 +315,113 @@ h1 {
   text-transform: uppercase;
   font-family: "helioscondcbold";
   margin-bottom: 15px; }
+
+.main-content__title-big {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: bold;
+  margin-bottom: 10px; }
+
+.tech_info__slider {
+  margin: 6px 0 25px;
+  width: 980px;
+  display: inline-block;
+  padding-left: 20px; }
+  .tech_info__slider .main-content__press-block {
+    margin: 0 5px; }
+  .tech_info__slider .slick-arrow {
+    height: 230px;
+    opacity: 1;
+    z-index: 10; }
+    .tech_info__slider .slick-arrow:before {
+      display: none; }
+    .tech_info__slider .slick-arrow:hover {
+      background-color: #74767d; }
+  .tech_info__slider .slick-prev {
+    background: #adaeb3 url(../img/prev.png) center center no-repeat;
+    left: 0; }
+  .tech_info__slider .slick-next {
+    background: #adaeb3 url(../img/next.png) center center no-repeat;
+    right: -20px; }
+  .tech_info__slider .main-content__press-title {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 0; }
+  .tech_info__slider .main-content__press-text {
+    font-size: 14px;
+    line-height: 17px; }
+  .tech_info__slider .main-content__press-move {
+    padding-top: 8px;
+    padding-right: 8px; }
+
+a.instructions {
+  display: inline-block;
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #585857;
+  border-bottom: 1px dashed #585857;
+  font-weight: bold; }
+  a.instructions:hover {
+    border-bottom: 1px solid transparent; }
+  a.instructions:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    border: 4px solid transparent;
+    border-top: 4px solid #585857;
+    margin-left: 5px;
+    margin-top: 3px; }
+
+.text-xs-right {
+  text-align: right;
+  width: 100%; }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.license {
+  display: inline-block;
+  vertical-align: top;
+  width: 490px;
+  margin-right: 5px;
+  margin-bottom: 15px; }
+  .license__img, .license__block {
+    display: inline-block;
+    vertical-align: top; }
+  .license__block {
+    width: 370px;
+    margin-left: 15px; }
+  .license__title {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .license__text {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px; }
+  .license__link {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    display: inline-block;
+    cursor: pointer; }
+    .license__link:hover {
+      text-decoration: none; }
+    .license__link:after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 18px;
+      height: 18px;
+      background: url("../img/loupe.jpg") 0 0 no-repeat;
+      margin-left: 8px; }
 
 .wrapper {
   width: 1000px;
@@ -971,6 +1106,9 @@ h1 {
       border: 1px solid #939393;
       padding: 8px 5px;
       margin-right: 7px; }
+      .main-content__calculator-input--kg {
+        width: 70px;
+        text-align: right; }
     .main-content__calculator-red {
       display: inline-block;
       vertical-align: bottom;
@@ -1701,6 +1839,16 @@ h1 {
 .search__form {
   position: relative;
   margin-bottom: 20px; }
+  .search__form--mini {
+    width: 320px; }
+    .search__form--mini .search__input {
+      border: 1px solid #97989b;
+      line-height: 26px;
+      font-size: 12px;
+      padding-left: 10px; }
+    .search__form--mini .search__button {
+      top: 7px;
+      outline: 0; }
 
 .search__request {
   background: #d8d8db; }
@@ -2062,6 +2210,9 @@ h1 {
     vertical-align: middle;
     position: relative;
     width: 180px; }
+    .filter__block--big {
+      width: 235px;
+      margin-bottom: 20px; }
   .filter__button {
     width: 100%;
     height: 32px;

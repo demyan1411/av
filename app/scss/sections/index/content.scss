@@ -558,6 +558,11 @@
       border: 1px solid #939393;
       padding: 8px 5px;
       margin-right: 7px;
+
+      &--kg {
+        width: 70px;
+        text-align: right;
+      }
     }
 
     &-red {
