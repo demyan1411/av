@@ -45,7 +45,8 @@ input, textarea {
 html {
   height: 100%;
   width: 100%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  zoom: 90%; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
@@ -196,14 +197,18 @@ h1 {
 .align-middle {
   vertical-align: middle !important; }
 
-.pdf-red:after {
-  content: '';
-  width: 31px;
-  height: 32px;
-  background: url("../img/pdf-red.jpg") 0 0 no-repeat;
-  display: inline-block;
-  margin-left: 18px;
-  margin-bottom: -4px; }
+.pdf-red {
+  font-weight: bold; }
+  .pdf-red:after {
+    content: '';
+    width: 31px;
+    height: 32px;
+    background: url("../img/pdf-red.jpg") 0 0 no-repeat;
+    display: inline-block;
+    margin-left: 18px;
+    margin-bottom: -4px; }
+  .pdf-red:hover {
+    color: #cd2c2c; }
 
 .link {
   font-weight: bold;
@@ -423,6 +428,26 @@ a.instructions {
       background: url("../img/loupe.jpg") 0 0 no-repeat;
       margin-left: 8px; }
 
+.slick-next, .slick-prev {
+  z-index: 1; }
+  .slick-next:before, .slick-prev:before {
+    font-size: 0 !important;
+    width: 27px;
+    height: 27px;
+    display: block; }
+
+.slick-next {
+  right: 20px; }
+
+.slick-prev {
+  left: 20px; }
+
+.slick-next:before {
+  background: url("../img/slick-next.png") center center no-repeat; }
+
+.slick-prev:before {
+  background: url("../img/slick-prev.png") center center no-repeat; }
+
 .wrapper {
   width: 1000px;
   margin: 0 auto;
@@ -623,7 +648,8 @@ a.instructions {
     height: 314px;
     width: 100%;
     background-repeat: no-repeat;
-    background-position: center 0;
+    background-position: center 170px;
+    background-attachment: fixed;
     padding-top: 45px;
     outline: 0; }
   .top-block__content {
@@ -811,7 +837,8 @@ a.instructions {
       margin-left: 18px;
       opacity: 0;
       transition: opacity .1s;
-      z-index: 10; }
+      z-index: 10;
+      font-weight: bold; }
       .main-content__info-link:after {
         content: '';
         width: 18px;
@@ -1161,7 +1188,8 @@ a.instructions {
   padding-top: 44px;
   padding-bottom: 70px;
   color: #e6e7e8;
-  background: url(../img/about-first-block.jpg) center top no-repeat; }
+  background: url(../img/about-first-block.jpg) center 170px no-repeat;
+  background-attachment: fixed; }
   .about-first__title {
     font-size: 17px;
     line-height: 24px;
@@ -1259,9 +1287,11 @@ a.instructions {
   font-family: "SeroOffcPro-Medium"; }
 
 .about-geography__link {
-  text-decoration: underline; }
+  text-decoration: underline;
+  font-weight: bold; }
   .about-geography__link:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #cd2c2c; }
 
 .about-title {
   color: #cd2c2c;
@@ -1522,13 +1552,17 @@ a.instructions {
     line-height: 18px;
     width: 318px; }
   .about-career__title {
+    font-size: 14px;
+    line-height: 17px;
     text-transform: uppercase;
-    font-family: "SeroOffcPro-Medium"; }
-    .about-career__title--red {
-      color: #cd2c2c;
-      text-decoration: underline; }
-      .about-career__title--red:hover {
-        text-decoration: none; }
+    text-decoration: underline;
+    color: #616369;
+    margin-bottom: 3px;
+    display: inline-block;
+    font-family: "helioscondcbold"; }
+    .about-career__title:hover {
+      text-decoration: none;
+      color: #cd2c2c; }
   .about-career__text {
     margin-bottom: 10px; }
 
@@ -1627,7 +1661,8 @@ a.instructions {
 .post__link {
   font-size: 16px;
   line-height: 20px;
-  text-decoration: underline; }
+  text-decoration: underline;
+  font-weight: bold; }
   .post__link:hover {
     color: #cd2c2c;
     text-decoration: none; }
@@ -1854,13 +1889,15 @@ a.instructions {
   background: #d8d8db; }
 
 .search__input {
-  border: 1px solid #cd2c2c;
+  border: 1px solid #dedfe1;
   font-size: 16px;
   line-height: 38px;
   padding: 0 18px;
   display: block;
   width: 100%;
   color: #616369; }
+  .search__input:hover, .search__input:focus {
+    border: 1px solid #cd2c2c; }
 
 .search__button {
   width: 16px;

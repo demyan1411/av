@@ -22,6 +22,7 @@ html {
 	height:100%;
 	width: 100%;
 	box-sizing: border-box;
+	zoom: 90%;
 }
 
 *, *:before, *:after {
@@ -226,6 +227,7 @@ h1 {
 }
 
 .pdf-red {
+	font-weight: bold;
 	&:after {
 		content: '';
 		width: 31px;
@@ -234,6 +236,10 @@ h1 {
 		display: inline-block;
 		margin-left: 18px;
 		margin-bottom: -4px;
+	}
+
+	&:hover {
+		color: #cd2c2c;
 	}
 }
 
@@ -532,5 +538,34 @@ a.instructions {
 			background: url('../img/loupe.jpg') 0 0 no-repeat;
 			margin-left: 8px;
 		}
+	}
+}
+.slick {
+	&-next,
+	&-prev {
+		z-index: 1;
+
+		&:before {
+			font-size: 0 !important;
+			width: 27px;
+			height: 27px;
+			display: block;
+		}
+	}
+
+	&-next {
+		right: 20px;
+	}
+
+	&-prev {
+		left: 20px;
+	}
+
+	&-next:before {
+		background: url('../img/slick-next.png') center center no-repeat;
+	}
+
+	&-prev:before {
+		background: url('../img/slick-prev.png') center center no-repeat;
 	}
 }

@@ -22,14 +22,14 @@ $(document).ready(function() {
 
 	$('.js-main-content-slider').slick({
 		dots: true,
-		arrows: false,
+		arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1
 	});
 
 	$('.service_block__slider').slick({
 		dots: true,
-		arrows: false,
+		arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1
 	});
@@ -70,7 +70,7 @@ $(document).ready(function() {
 
 	$('.slider_block__slider').slick({
 		dots: true,
-		arrows: false,
+		arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1,
 		speed: 500

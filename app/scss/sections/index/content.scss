@@ -108,6 +108,7 @@
       opacity: 0;
       transition: opacity .1s;
       z-index: 10;
+      font-weight: bold;
 
       &:after {
         content: '';

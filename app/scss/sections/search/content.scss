@@ -30,13 +30,18 @@
   }
 
   &__input {
-    border: 1px solid #cd2c2c;
+    border: 1px solid #dedfe1;
     font-size: 16px;
     line-height: 38px;
     padding: 0 18px;
     display: block;
     width: 100%;
     color: #616369;
+
+    &:hover,
+    &:focus {
+      border: 1px solid #cd2c2c;
+    }
   }
 
   &__button {

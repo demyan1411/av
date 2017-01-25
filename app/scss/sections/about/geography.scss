@@ -93,9 +93,12 @@
 
   &__link {
     text-decoration: underline;
+    font-weight: bold;
 
     &:hover {
       text-decoration: none;
+      color: #cd2c2c;
+
     }
   }
 }
