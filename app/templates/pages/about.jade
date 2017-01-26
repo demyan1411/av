@@ -1,7 +1,9 @@
 ﻿extends ../layouts/main_layout.jade
 
+include ../mixins/top-block.jade
+
 block content
-	include ../common/about/first-block.jade
+	+top-block('img/about-first-block.jpg')
 	include ../common/about/geography.jade
 	include ../common/about/mission.jade
 	include ../common/about/efficiency.jade
