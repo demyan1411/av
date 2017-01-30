@@ -41,7 +41,8 @@ $(document).ready(function() {
     slidesToScroll: 1,
 		autoplay: true,
   	autoplaySpeed: 10000,
-		speed: 1000
+		speed: 1000,
+		variableWidth: true
 	});
 
 	$('.js-post-slider').slick({
@@ -164,8 +165,10 @@ $(document).ready(function() {
 }); // end ready
 
 function resizeSlider() {
-	if ($(window).width() < 1520 && $(window).width() > 980) {
+	if ($(window).width() > 980) {
+		console.log(123);
 		$('.js-main-block-slider').css('width', $(window).width() + 'px');
+		$('.main-block__slide').css('width', $(window).width() + 'px');
 	}
 }
 

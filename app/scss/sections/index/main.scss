@@ -1,12 +1,13 @@
 .main-block {
   color: #f4f3f2;
-  width: 1500px;
+  width: 100%;
   margin: 0 auto;
+  overflow: hidden;
   zoom: 111%;
 
   &__slide {
     height: 632px;
-    width: 100%;
+    // width: 100%;
     background-repeat: no-repeat;
     background-position: center 0;
     padding-top: 85px;
