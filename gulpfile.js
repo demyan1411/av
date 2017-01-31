@@ -36,6 +36,10 @@ gulp.task('scss', function () {
 	gulp.src('app/scss/main.scss')
 	.pipe(sass())
 	.on('error', log)
+	.pipe(autoprefixer({
+		browsers: ['last 5 versions', 'ie 8', 'ie 9'],
+		cascade: false
+	}))
 	.pipe(gulp.dest('app/css'))
 	.pipe(reload({stream: true}));
 });

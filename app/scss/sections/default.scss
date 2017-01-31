@@ -22,7 +22,6 @@ html {
 	height:100%;
 	width: 100%;
 	box-sizing: border-box;
-	zoom: 90%;
 }
 
 *, *:before, *:after {
@@ -36,6 +35,8 @@ body {
 	font-size: $defaultFontSize;
 	line-height: $defaultLineHeight;
 	color: $defaultColor;
+	// zoom:90%;
+	// transform: scale(.9);
 }
 
 h1 {

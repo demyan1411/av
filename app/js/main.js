@@ -15,7 +15,7 @@ $(document).ready(function() {
 	$('.js-popup').on('click', function (e) {
 		e.preventDefault();
 
-		if (!e.target.closest('.popup__block') || e.target.closest('.popup__close')) {
+		if (!$(e.target).closest('.popup__block') || $(e.target).closest('.popup__close')) {
 			$('.js-popup').hide();
 		}
 	});
@@ -154,7 +154,7 @@ $(document).ready(function() {
 	});
 
 	$('body').on('click',function (e) {
-		if (!e.target.closest('.js-filter')) {
+		if (!$(e.target).closest('.js-filter')) {
 			$('.js-filter-select').removeClass('active');
 		}
 	})
