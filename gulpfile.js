@@ -18,7 +18,8 @@ var gulp = require("gulp"),
 	autoprefixer = require('gulp-autoprefixer'),
 	uncss = require('gulp-uncss'),
 	sass = require('gulp-sass'),
-	gcallback = require('gulp-callback');
+	gcallback = require('gulp-callback'),
+	lec = require('gulp-line-ending-corrector');
 
 // превращаем jade в html
 gulp.task('jade', function () {
@@ -27,6 +28,7 @@ gulp.task('jade', function () {
 		pretty: true
 	}))
 	.on('error', log)
+	.pipe(lec({verbose:true, eolc: 'CRLF', encoding:'utf8'}))
 	.pipe(gulp.dest('app/'))
 	.pipe(reload({stream: true}));
 });
@@ -40,6 +42,7 @@ gulp.task('scss', function () {
 		browsers: ['last 5 versions', 'ie 8', 'ie 9'],
 		cascade: false
 	}))
+	.pipe(lec({verbose:true, eolc: 'CRLF', encoding:'utf8'}))
 	.pipe(gulp.dest('app/css'))
 	.pipe(reload({stream: true}));
 });

@@ -166,7 +166,6 @@ $(document).ready(function() {
 
 function resizeSlider() {
 	if ($(window).width() > 980) {
-		console.log(123);
 		$('.js-main-block-slider').css('width', $(window).width() + 'px');
 		$('.main-block__slide').css('width', $(window).width() + 'px');
 	}

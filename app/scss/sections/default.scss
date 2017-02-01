@@ -358,6 +358,14 @@ h1 {
 
 .jc-fs {
 	justify-content: flex-start;
+
+	.min-infoBlock {
+		margin-right: 20px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
 }
 
 .bold {
