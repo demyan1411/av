@@ -256,7 +256,9 @@ h1 {
     margin-bottom: 12px;
     text-decoration: underline; }
     .min-infoBlock--link:hover {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #cd2c2c;
+      font-weight: bold; }
     .min-infoBlock--link:after {
       content: '';
       background: url("../img/pdf-red.jpg") 0 0 no-repeat;
@@ -432,7 +434,8 @@ a.instructions {
     display: inline-block;
     cursor: pointer; }
     .license__link:hover {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #cd2c2c; }
     .license__link:after {
       content: '';
       display: inline-block;
@@ -2124,9 +2127,10 @@ a.instructions {
         color: #cd2c2c; }
       .documents .document__link:after {
         content: '';
-        width: 19px;
+        width: 20px;
         height: 20px;
-        background: url("../img/pdf.png") 0 0 no-repeat;
+        background: url("../img/pdf-red.jpg") 0 0 no-repeat;
+        background-size: cover;
         display: inline-block;
         margin-left: 5px;
         margin-bottom: -3px; }
