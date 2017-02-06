@@ -137,6 +137,10 @@ h1 {
 	margin-bottom: 20px;
 }
 
+.mb-28 {
+	margin-bottom: 28px !important;
+}
+
 .db {
 	display: block;
 }
@@ -508,6 +512,11 @@ a.instructions {
 	width: 490px;
 	margin-right: 5px;
 	margin-bottom: 15px;
+
+	&__img {
+		border: 1px solid #a1a1a1;
+		padding: 2px;
+	}
 
 	&__img,
 	&__block {

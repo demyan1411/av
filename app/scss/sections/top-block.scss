@@ -12,7 +12,7 @@
     height: 320px;
     margin: 0 auto;
     outline: 0;
-    clip: rect(auto, auto, auto, auto);
+    clip: rect(auto, 9000px, auto, auto);
   }
 
   .wrapper {
@@ -55,6 +55,15 @@
 
     &:hover {
       text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .top-block {
+    .wrapper {
+      position: relative;
+      top: 30px;
     }
   }
 }

@@ -15,7 +15,9 @@ $(document).ready(function() {
 	$('.js-popup').on('click', function (e) {
 		e.preventDefault();
 
-		if (!$(e.target).closest('.popup__block') || $(e.target).closest('.popup__close')) {
+		var div = $(".popup__block");
+
+		if (!div.is(e.target) && div.has(e.target).length === 0) {
 			$('.js-popup').hide();
 		}
 	});

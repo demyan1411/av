@@ -128,6 +128,9 @@ h1 {
 .mb-20 {
   margin-bottom: 20px; }
 
+.mb-28 {
+  margin-bottom: 28px !important; }
+
 .db {
   display: block; }
 
@@ -411,6 +414,9 @@ a.instructions {
   width: 490px;
   margin-right: 5px;
   margin-bottom: 15px; }
+  .license__img {
+    border: 1px solid #a1a1a1;
+    padding: 2px; }
   .license__img, .license__block {
     display: inline-block;
     vertical-align: top; }
@@ -548,6 +554,13 @@ a.instructions {
     .header__link-title {
       text-transform: uppercase;
       display: block; }
+    .header__link.active .header__link-title {
+      color: #cd2c2c;
+      font-weight: bold;
+      pointer-events: none;
+      cursor: default; }
+    .header__link.active .header__link-icon {
+      display: block; }
     .header__link-icon {
       width: 20px;
       height: 20px;
@@ -673,7 +686,7 @@ a.instructions {
     height: 320px;
     margin: 0 auto;
     outline: 0;
-    clip: rect(auto, auto, auto, auto); }
+    clip: rect(auto, 9000px, auto, auto); }
   .top-block .wrapper {
     position: fixed;
     top: 210px;
@@ -706,6 +719,11 @@ a.instructions {
     .top-block__link:hover {
       text-decoration: none; }
 
+@media screen and (max-width: 1000px) {
+  .top-block .wrapper {
+    position: relative;
+    top: 30px; } }
+
 .popup {
   background: rgba(0, 0, 0, 0.7);
   position: fixed;
@@ -717,6 +735,8 @@ a.instructions {
   top: 0;
   left: 0;
   display: none; }
+  .popup .link:hover {
+    color: #cd2c2c; }
   .popup__block {
     width: 960px;
     padding: 30px 45px 50px;
@@ -738,6 +758,8 @@ a.instructions {
     right: 20px;
     cursor: pointer;
     background: url("../img/popup-close.png") 0 0 no-repeat; }
+    .popup .popup__close:hover {
+      background: url("../img/popup-close-hover.png") 0 0 no-repeat; }
   .popup__input {
     line-height: 31px;
     color: #b4b4b4;
@@ -747,9 +769,11 @@ a.instructions {
     display: block;
     width: 185px;
     line-height: 33px;
-    background: #cd2c2c;
+    background: #616369;
     color: #fff;
     margin-bottom: 50px; }
+    .popup__button:hover {
+      background: #cd2c2c; }
 
 .main-block {
   color: #f4f3f2;
@@ -763,7 +787,13 @@ a.instructions {
     padding-top: 85px;
     outline: 0; }
   .main-block .slick-dots {
-    bottom: 275px; }
+    bottom: 275px;
+    display: inline-block !important;
+    width: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
   .main-block__content {
     width: 320px; }
   .main-block__title {
@@ -784,7 +814,13 @@ a.instructions {
     margin-bottom: 23px; }
   .main-block__social {
     font-size: 18px;
-    line-height: 22px; }
+    line-height: 22px;
+    text-decoration: underline;
+    position: relative;
+    z-index: 9;
+    display: inline-block; }
+    .main-block__social:hover {
+      text-decoration: none; }
     .main-block__social:before {
       content: '';
       background: url(../img/tick.png) 0 0 no-repeat;
@@ -850,10 +886,10 @@ a.instructions {
       margin-bottom: 20px; }
     .main-content__info-title {
       font-size: 18px;
-      line-height: 19mpx;
+      line-height: 22px;
       text-transform: uppercase;
       background: rgba(33, 34, 37, 0.7);
-      padding: 18px 0 15px 18px;
+      padding: 13px 0 15px 18px;
       position: relative; }
       .main-content__info-title:after {
         content: '';
@@ -2322,21 +2358,20 @@ a.instructions {
   display: inline-block; }
 
 .filter {
-  margin-bottom: 20px; }
+  margin-bottom: 40px; }
   .filter__text {
     display: inline-block;
     vertical-align: middle;
     font-size: 16px;
     line-height: 19px;
-    margin-right: 20px; }
+    margin-right: 15px; }
   .filter__block {
     display: inline-block;
     vertical-align: middle;
     position: relative;
     width: 180px; }
     .filter__block--big {
-      width: 235px;
-      margin-bottom: 20px; }
+      width: 235px; }
   .filter__button {
     width: 100%;
     height: 32px;

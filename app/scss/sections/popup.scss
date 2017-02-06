@@ -10,6 +10,11 @@
   left: 0;
   display: none;
 
+  .link:hover {
+    color: #cd2c2c;
+  }
+
+
   &__block {
     width: 960px;
     padding: 30px 45px 50px;
@@ -33,6 +38,10 @@
     right: 20px;
     cursor: pointer;
     background: url('../img/popup-close.png') 0 0 no-repeat;
+
+    &:hover {
+      background: url('../img/popup-close-hover.png') 0 0 no-repeat;
+    }
   }
 
   &__form {
@@ -54,8 +63,12 @@
     display: block;
     width: 185px;
     line-height: 33px;
-    background: #cd2c2c;
+    background: #616369;
     color: #fff;
     margin-bottom: 50px;
+
+    &:hover {
+      background: #cd2c2c;
+    }
   }
 }

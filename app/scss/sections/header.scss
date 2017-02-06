@@ -99,6 +99,19 @@
       display: block;
     }
 
+    &.active {
+      .header__link-title {
+        color: #cd2c2c;
+        font-weight: bold;
+        pointer-events: none;
+        cursor: default;
+      }
+
+      .header__link-icon {
+        display: block;
+      }
+    }
+
     &-icon {
       width: 20px;
       height: 20px;

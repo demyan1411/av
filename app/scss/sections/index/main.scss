@@ -16,6 +16,10 @@
 
   .slick-dots {
     bottom: 275px;
+    display: inline-block !important;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   &__content {
@@ -48,6 +52,14 @@
   &__social {
     font-size: 18px;
     line-height: 22px;
+    text-decoration: underline;
+    position: relative;
+    z-index: 9;
+    display: inline-block;
+
+    &:hover {
+      text-decoration: none;
+    }
 
     &:before {
       content: '';
