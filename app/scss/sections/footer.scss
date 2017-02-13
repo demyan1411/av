@@ -89,7 +89,14 @@
 	}
 
 	&__name {
-		margin-top: 15px;
+		margin-top: -7px;
 		float: right;
+		text-align: right;
+
+		a {
+			text-decoration: underline;
+
+			&:hover {text-decoration: none;}
+		}
 	}
 }

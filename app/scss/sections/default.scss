@@ -39,6 +39,8 @@ body {
 	// transform: scale(.9);
 }
 
+
+
 h1 {
 	margin: 0;
 	padding: 0;
@@ -56,11 +58,21 @@ h1 {
 	min-height: 100%;
 	display: table;
 	position: relative;
-	padding-top: 170px;
+	padding-top: 150px;
 
 	&--content {
 		display: table-row;
 		height: 100%;
+	}
+}
+
+.mail-link {
+	text-decoration: underline;
+
+	&:hover {
+		color: #cd2c2c;
+		font-weight: bold;
+		text-decoration: none;
 	}
 }
 
@@ -205,6 +217,14 @@ h1 {
 .p-y-9 {
 	padding-top: 9px;
 	padding-bottom: 10px;
+}
+
+.p-t-9 {
+	padding-top: 9px;
+}
+
+.p-b-5 {
+	padding-bottom: 5px;
 }
 
 .p-l-8 {

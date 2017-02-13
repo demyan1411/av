@@ -10,6 +10,7 @@ $(document).ready(function() {
 	$('.js-open-popup').on('click', function (e) {
 		e.preventDefault();
 		$('.js-popup').show();
+		$('body').addClass('js-hidden');
 	});
 
 	$('.js-popup').on('click', function (e) {
@@ -19,6 +20,7 @@ $(document).ready(function() {
 
 		if (!div.is(e.target) && div.has(e.target).length === 0) {
 			$('.js-popup').hide();
+			$('body').removeClass('js-hidden');
 		}
 	});
 

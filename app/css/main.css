@@ -72,10 +72,17 @@ h1 {
   min-height: 100%;
   display: table;
   position: relative;
-  padding-top: 170px; }
+  padding-top: 150px; }
   .main--content {
     display: table-row;
     height: 100%; }
+
+.mail-link {
+  text-decoration: underline; }
+  .mail-link:hover {
+    color: #cd2c2c;
+    font-weight: bold;
+    text-decoration: none; }
 
 /* defaul style end  */
 .slick-dots li button {
@@ -180,6 +187,12 @@ h1 {
 .p-y-9 {
   padding-top: 9px;
   padding-bottom: 10px; }
+
+.p-t-9 {
+  padding-top: 9px; }
+
+.p-b-5 {
+  padding-bottom: 5px; }
 
 .p-l-8 {
   padding-left: 8px; }
@@ -528,7 +541,7 @@ a.instructions {
         color: #cd2c2c;
         text-decoration: none; }
   .header__main {
-    padding-top: 16px;
+    padding-top: 0;
     background: #fff; }
     .header__main:before, .header__main:after {
       content: " ";
@@ -536,11 +549,13 @@ a.instructions {
     .header__main:after {
       clear: both; }
   .header__logo {
-    float: left; }
+    float: left;
+    height: 86px;
+    margin-top: 16px; }
   .header__nav {
     float: right; }
   .header__item {
-    padding-top: 75px;
+    padding-top: 70px;
     display: inline-block;
     margin-left: 22px;
     position: relative; }
@@ -670,15 +685,20 @@ a.instructions {
         top: 1px;
         left: 0; }
   .footer__name {
-    margin-top: 15px;
-    float: right; }
+    margin-top: -7px;
+    float: right;
+    text-align: right; }
+    .footer__name a {
+      text-decoration: underline; }
+      .footer__name a:hover {
+        text-decoration: none; }
 
 .top-block {
   color: #f4f3f2;
   height: 320px;
   position: relative;
   background-repeat: no-repeat;
-  background-position: center 170px;
+  background-position: center 150px;
   background-attachment: fixed; }
   .top-block__block {
     position: absolute;
@@ -689,7 +709,7 @@ a.instructions {
     clip: rect(auto, 9000px, auto, auto); }
   .top-block .wrapper {
     position: fixed;
-    top: 210px;
+    top: 180px;
     left: 0px;
     padding: 1em;
     width: 1000px;
@@ -742,11 +762,11 @@ a.instructions {
     padding: 30px 45px 50px;
     background: #fff;
     position: absolute;
-    top: 50%;
+    top: 100px;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
   .popup__content {
     width: 580px;
     position: relative; }
@@ -774,6 +794,11 @@ a.instructions {
     margin-bottom: 50px; }
     .popup__button:hover {
       background: #cd2c2c; }
+
+body.js-hidden {
+  overflow: hidden; }
+  body.js-hidden .js-popup {
+    overflow-y: auto; }
 
 .main-block {
   color: #f4f3f2;
@@ -1611,7 +1636,7 @@ a.instructions {
     color: #cd2c2c;
     display: inline-block;
     vertical-align: top;
-    letter-spacing: -3px; }
+    letter-spacing: -1px; }
   .about-efficiency__right {
     display: inline-block;
     vertical-align: top;
@@ -2339,7 +2364,8 @@ a.instructions {
 .services .main-content__info--text-link {
   font-size: 16px;
   line-height: 19px;
-  text-decoration: underline; }
+  text-decoration: underline;
+  white-space: nowrap; }
   .services .main-content__info--text-link:hover {
     color: #cd2c2c; }
 

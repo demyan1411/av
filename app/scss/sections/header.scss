@@ -62,13 +62,15 @@
   }
 
   &__main {
-    padding-top: 16px;
+    padding-top: 0;
     background: #fff;
     @include cl;
   }
 
   &__logo {
     float: left;
+    height: 86px;
+    margin-top: 16px;
   }
 
   &__nav {
@@ -80,7 +82,7 @@
   }
 
   &__item {
-    padding-top: 75px;
+    padding-top: 70px;
     display: inline-block;
     margin-left: 22px;
     position: relative;

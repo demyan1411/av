@@ -20,9 +20,9 @@
     padding: 30px 45px 50px;
     background: #fff;
     position: absolute;
-    top: 50%;
+    top: 100px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
   }
 
   &__content {
@@ -71,4 +71,14 @@
       background: #cd2c2c;
     }
   }
+}
+
+body {
+	&.js-hidden {
+		overflow: hidden;
+
+		.js-popup {
+			overflow-y: auto;
+		}
+	}
 }
