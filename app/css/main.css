@@ -767,6 +767,9 @@ a.instructions {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
+  .popup.js-video-popup .popup__block {
+    padding: 50px 45px 30px;
+    width: 650px; }
   .popup__content {
     width: 580px;
     position: relative; }
@@ -1143,6 +1146,21 @@ body.js-hidden {
         background: url(../img/press-triangle-hover.jpg) 0 0 no-repeat; }
       .main-content__press-block:hover .main-content__press-move {
         top: 0; }
+      .main-content__press-block.js-open-video-popup:after {
+        content: '';
+        width: 36px;
+        height: 36px;
+        display: block;
+        background: url(../img/play.png) 0 0 no-repeat;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -40px;
+        margin-left: -18px; }
+      .main-content__press-block.js-open-video-popup:hover:after {
+        opacity: .8; }
+      .main-content__press-block.js-open-video-popup:hover .main-content__press-move {
+        top: 148px; }
     .main-content__press-move {
       background: rgba(33, 34, 37, 0.7);
       width: 100%;

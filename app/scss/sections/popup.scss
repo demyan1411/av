@@ -25,6 +25,13 @@
     transform: translateX(-50%);
   }
 
+  &.js-video-popup {
+    .popup__block {
+      padding: 50px 45px 30px;
+      width: 650px;
+    }
+  }
+
   &__content {
     width: 580px;
     position: relative;

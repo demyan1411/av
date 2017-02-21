@@ -390,6 +390,31 @@
           top: 0;
         }
       }
+
+      &.js-open-video-popup {
+        &:after {
+          content: '';
+          width: 36px;
+          height: 36px;
+          display: block;
+          background: url(../img/play.png) 0 0 no-repeat;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -40px;
+          margin-left: -18px;
+        }
+
+        &:hover {
+          &:after {
+            opacity: .8;
+          }
+
+          .main-content__press-move {
+            top: 148px;
+          }
+        }
+      }
     }
 
     &-move {

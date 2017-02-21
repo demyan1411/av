@@ -13,13 +13,25 @@ $(document).ready(function() {
 		$('body').addClass('js-hidden');
 	});
 
-	$('.js-popup').on('click', function (e) {
+	$('.js-open-video-popup').on('click', function (e) {
+		e.preventDefault();
+		$('.js-video-popup').show();
+		$('body').addClass('js-hidden');
+	});
+
+	$('.js-popup-close').on('click', function (e) {
+		e.preventDefault();
+		$('.js-popup, .js-video-popup').hide();
+		$('body').removeClass('js-hidden');
+	});
+
+	$('.js-popup, .js-video-popup').on('click', function (e) {
 		e.preventDefault();
 
 		var div = $(".popup__block");
 
 		if (!div.is(e.target) && div.has(e.target).length === 0) {
-			$('.js-popup').hide();
+			$('.js-popup, .js-video-popup').hide();
 			$('body').removeClass('js-hidden');
 		}
 	});
