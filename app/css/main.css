@@ -1555,6 +1555,8 @@ body.js-hidden {
   float: right;
   width: 666px;
   height: 420px; }
+  .slider_block__slider.wrap {
+    margin-left: 20px; }
   .slider_block__slider .slick-dots {
     bottom: 17px; }
 
@@ -1566,6 +1568,11 @@ body.js-hidden {
   float: left;
   width: 310px;
   padding-right: 12px; }
+  .slider_block__left.wrap {
+    float: none;
+    width: auto;
+    margin-bottom: 35px;
+    padding-right: 0; }
 
 .slider_block__title {
   font-size: 27px;

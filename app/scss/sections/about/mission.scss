@@ -119,6 +119,10 @@
     width: 666px;
     height: 420px;
 
+    &.wrap {
+      margin-left: 20px;
+    }
+
     .slick-dots {
       bottom: 17px;
     }
@@ -133,6 +137,13 @@
     float: left;
     width: 310px;
     padding-right: 12px;
+
+    &.wrap {
+      float: none;
+      width: auto;
+      margin-bottom: 35px;
+      padding-right: 0;
+    }
   }
 
   &__title {
